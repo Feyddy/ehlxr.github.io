@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ehlxr.me/"/>
-  <updated>2016-11-01T09:31:10.230Z</updated>
+  <updated>2016-11-02T09:33:02.891Z</updated>
   <id>http://ehlxr.me/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试 Travis CI 结合 Hexo 使用</title>
+    <link href="http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95-Travis-CI-%E7%BB%93%E5%90%88-Hexo-%E4%BD%BF%E7%94%A8/"/>
+    <id>http://ehlxr.me/2016/11/02/测试-Travis-CI-结合-Hexo-使用/</id>
+    <published>2016-11-02T09:32:35.000Z</published>
+    <updated>2016-11-02T09:33:02.891Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="测试-Travis-CI-结合-Hexo-使用"><a href="#测试-Travis-CI-结合-Hexo-使用" class="headerlink" title="测试 Travis CI 结合 Hexo 使用"></a>测试 Travis CI 结合 Hexo 使用</h1>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;测试-Travis-CI-结合-Hexo-使用&quot;&gt;&lt;a href=&quot;#测试-Travis-CI-结合-Hexo-使用&quot; class=&quot;headerlink&quot; title=&quot;测试 Travis CI 结合 Hexo 使用&quot;&gt;&lt;/a&gt;测试 Travis CI 结合 H
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>热爱微小的改变</title>
@@ -1324,57 +1342,6 @@
       <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
     
       <category term="GitHub" scheme="http://ehlxr.me/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime Text 插件安装</title>
-    <link href="http://ehlxr.me/2016/07/25/Sublime-Text-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
-    <id>http://ehlxr.me/2016/07/25/Sublime-Text-插件安装/</id>
-    <published>2016-07-25T13:06:57.000Z</published>
-    <updated>2016-11-01T09:31:10.215Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>Sublime Text 官方介绍：</p>
-<blockquote>
-<p>“Sublime Text is a sophisticated text editor for code, markup and prose.You’ll love the slick user interface, extraordinary features and amazing performance.”</p>
-</blockquote>
-</blockquote>
-<p>Sublime Text 是一款优秀的轻量级编辑器，而且支持跨平台，支持Windows、Linux、Mac OS X 等主流操作系统。虽然是一款收费软件，但也允许人们<strong>无限期免费使用</strong>。（<a href="http://www.sublimetext.com/3" target="_blank" rel="external">官方下载地址</a>）</p>
-<p>Sublime Text 具有漂亮的用户界面和强大可扩展插件功能，本文介绍如何安装 Sublime Text 插件。</p>
-<a id="more"></a>
-<p>打开 Sublime Text 编辑器的 Console（控制台）使用快捷键 <code>ctrl+`</code> 或者点击菜单 <code> View &gt; Show Console menu </code> 打开 Console，如图：</p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/20160725212921.png" alt=""></p>
-<p>Sublime Text 2 粘贴以下代码：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib2,os,hashlib; h = <span class="string">'2915d1851351e5ee549c20394736b442'</span> + <span class="string">'8bc59f460fa1548d1514676163dafc88'</span>; pf = <span class="string">'Package Control.sublime-package'</span>; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(ipp) <span class="keyword">else</span> None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); <span class="keyword">by</span> = urllib2.urlopen( <span class="string">'http://packagecontrol.io/'</span> + pf.<span class="built_in">replace</span>(<span class="string">' '</span>, <span class="string">'%20'</span>)).<span class="built_in">read</span>(); dh = hashlib.sha256(<span class="keyword">by</span>).hexdigest(); <span class="built_in">open</span>( os.path.join( ipp, pf), <span class="string">'wb'</span> ).<span class="built_in">write</span>(<span class="keyword">by</span>) <span class="keyword">if</span> dh == h <span class="keyword">else</span> None; print(<span class="string">'Error validating download (got %s instead of %s), please try manual install'</span> % (dh, h) <span class="keyword">if</span> dh != h <span class="keyword">else</span> <span class="string">'Please restart Sublime Text to finish installation'</span>)</div></pre></td></tr></table></figure>
-<p>Sublime Text 3 粘贴以下代码：</p>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import urllib.request,os,hashlib; h = <span class="string">'2915d1851351e5ee549c20394736b442'</span> + <span class="string">'8bc59f460fa1548d1514676163dafc88'</span>; pf = <span class="string">'Package Control.sublime-package'</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); <span class="keyword">by</span> = urllib.request.urlopen( <span class="string">'http://packagecontrol.io/'</span> + pf.<span class="built_in">replace</span>(<span class="string">' '</span>, <span class="string">'%20'</span>)).<span class="built_in">read</span>(); dh = hashlib.sha256(<span class="keyword">by</span>).hexdigest(); print(<span class="string">'Error validating download (got %s instead of %s), please try manual install'</span> % (dh, h)) <span class="keyword">if</span> dh != h <span class="keyword">else</span> <span class="built_in">open</span>(os.path.join( ipp, pf), <span class="string">'wb'</span> ).<span class="built_in">write</span>(<span class="keyword">by</span>)</div></pre></td></tr></table></figure>
-<p>敲回车等待安装完成后重启 Sublime Text 即可，按下快捷键 <code> ctrl + shift + p </code> ,输入 <code>pci</code>（Package Control Install 简写）如图：</p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/20160725213757.png" alt=""></p>
-<p>敲回车即可打开插件安装界面，输入想要安装插件的名称即可开始安装，如图：</p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/20160725214353.png" alt=""></p>
-<p>Sublime Text 插件安装介绍完了，需要注意的是安装过程中要保持网络畅通。</p>
-<p><a href="https://packagecontrol.io/installation" target="_blank" rel="external">参考网址</a></p>
-<hr>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Sublime Text 官方介绍：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“Sublime Text is a sophisticated text editor for code, markup and prose.You’ll love the slick user interface, extraordinary features and amazing performance.”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Sublime Text 是一款优秀的轻量级编辑器，而且支持跨平台，支持Windows、Linux、Mac OS X 等主流操作系统。虽然是一款收费软件，但也允许人们&lt;strong&gt;无限期免费使用&lt;/strong&gt;。（&lt;a href=&quot;http://www.sublimetext.com/3&quot;&gt;官方下载地址&lt;/a&gt;）&lt;/p&gt;
-&lt;p&gt;Sublime Text 具有漂亮的用户界面和强大可扩展插件功能，本文介绍如何安装 Sublime Text 插件。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="Sublime" scheme="http://ehlxr.me/tags/Sublime/"/>
     
   </entry>
   
