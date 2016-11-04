@@ -4,6 +4,20 @@
   
     
     <entry>
+      <title><![CDATA[Docker 学习笔记]]></title>
+      <url>http://ehlxr.me/2016/11/03/Docker-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      <content type="text"><![CDATA[一、安装1.1 Ubuntu 系统1sudo apt-get install docker.io 1.2 CentOS 系统1sudo yum install docker 二、基本概念2.1 Docker imagesDocker image 是一个只读类型的模板。比如一个镜像可以是一个包含 apache 和你的 web 应用的 ubuntu 操作系统。我们经常使用镜像来创建容器。Docker 提供了一种快捷的方式来构建新镜像或者更新镜像，同时你也可以下载其他人已经创建好的镜像。Docker image 是 Docker 结构中的构建组件。 2.2 Docker RegistriesDocker registries 用来保存镜像。它分为公开仓库和私有仓库，你可以从仓库中上传或者下载镜像。公开的 Docker 仓库称之为 Docker Hub。它提供了你可以使用的非常多的镜像。你可以自由的创建镜像或者使用这里面其他人已经创建好的镜像。Docker registries 属于 Docker 中的分发组件。 2.3 Docker containersDocker containers 同目录有几分相似。Docker containers 保存了执行应用所需的所有资源。每一个 Docker containers 都是由 image 创建的。Docker containers 可以 run, start, stop, restart, rm。需要注意的是，Docker containers 之间是隔离的。Docker containers 属于 Docker 中的执行组件。 三、常用命令3.1 镜像操作 拉取镜像：docker pull nginx:latest 查看容器列表：docker images 删除容器：docker rmi &lt;image id&gt; 想要删除 untagged images（也就是那些 id 为 的容器）：docker rmi $(docker images | grep &quot;^&lt;none&gt;&quot; | awk &quot;{print $3}&quot;) 删除全部容器：docker rmi $(docker images -q) 3.2 创建容器创建一个容器，例如： 1docker run --name blog --privileged=true -v /home/ehlxr/Hexo/public:/usr/share/nginx/html:ro -d -p 80:80 docker.io/nginx --name：容器名称 --privileged=true：设置权限 -v：挂载本地磁盘目录，格式为本地磁盘绝对路径:容器路径 :ro：只读 -d：后台模式 -p：设置 EXPOSE 端口 3.3 容器操作 启动：docker start blog 停止：docker stop blog；停止所有容器：docker stop $(docker ps -a -q) 删除：docker rm blog；删除所有容器：docker rm $(docker ps -a -q) 查看：docker ps -a（查看所有容器，包括已启动的和未启动的） 3.3 进入容器1sudo docker exec -it blog /bin/bash 未完待续…]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[测试使用 daocloud 持续构建 Hexo]]></title>
+      <url>http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/</url>
+      <content type="text"><![CDATA[测试使用 daocloud 持续构建 HexoCoding Hexo DaoCloud看到这边博文，表示持续构建成功！！！]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[测试 Travis CI 结合 Hexo 使用]]></title>
       <url>http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95-Travis-CI-%E7%BB%93%E5%90%88-Hexo-%E4%BD%BF%E7%94%A8/</url>
       <content type="text"><![CDATA[测试 Travis CI 结合 Hexo 使用]]></content>
