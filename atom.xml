@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ehlxr.me/"/>
-  <updated>2016-11-03T12:34:14.353Z</updated>
+  <updated>2016-11-07T09:24:24.757Z</updated>
   <id>http://ehlxr.me/</id>
   
   <author>
@@ -14,6 +14,72 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[转]Git 版本回滚</title>
+    <link href="http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/"/>
+    <id>http://ehlxr.me/2016/11/07/转-Git-版本回滚/</id>
+    <published>2016-11-07T08:53:38.000Z</published>
+    <updated>2016-11-07T09:24:24.757Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>总有一天你会遇到下面的问题：</p>
+<ul>
+<li>改完代码匆忙提交，上线发现有问题，怎么办？赶紧回滚。</li>
+<li>改完代码测试也没有问题，但是上线发现你的修改影响了之前运行正常的代码报错，必须回滚。</li>
+</ul>
+</blockquote>
+<p>这些开发中很常见的问题，所以 <code>git</code> 的取消提交，回退甚至返回上一版本都是特别重要的。大致分为下面 <code>2</code> 种情况：</p>
+<h1 id="一、没有-push"><a href="#一、没有-push" class="headerlink" title="一、没有 push"></a>一、没有 push</h1><p>这种情况发生在你的本地代码仓库，可能你 <code>add</code>，<code>commit</code> 以后发现代码有点问题，准备取消提交，用到下面命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset [--soft | --mixed | --hard]</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>上面常见三种类型</p>
+<h2 id="mixed"><a href="#mixed" class="headerlink" title="mixed"></a>mixed</h2><p>会保留源码，只是将 <code>git commit</code> 和 <code>index</code> 信息回退到了某个版本。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">reset</span> 默认是 <span class="comment">--mixed 模式 </span></div><div class="line">git <span class="keyword">reset</span> <span class="comment">--mixed  等价于  git reset</span></div></pre></td></tr></table></figure>
+<h2 id="soft"><a href="#soft" class="headerlink" title="soft"></a>soft</h2><p>保留源码，只回退到 <code>commit</code> 信息到某个版本。不涉及 <code>index</code> 的回退，如果还需要提交，直接 <code>commit</code> 即可。</p>
+<h2 id="hard"><a href="#hard" class="headerlink" title="hard"></a>hard</h2><p>源码也会回退到某个版本，<code>commit</code> 和 <code>index</code> 都回回退到某个版本。（<strong>注意，这种方式是改变本地代码仓库源码</strong>）</p>
+<h1 id="二、已经-push"><a href="#二、已经-push" class="headerlink" title="二、已经 push"></a>二、已经 push</h1><h2 id="2-1-方法一"><a href="#2-1-方法一" class="headerlink" title="2.1 方法一"></a>2.1 方法一</h2><p>使用 <code>git reset --hard &lt;commit...&gt;</code> 回退本地代码到某个版本。</p>
+<p>使用 <code>git push --force</code> 将本次变更强行推送至服务器（因为你线上的代码没有变，线上 <code>commit</code>，<code>index</code> 都没有变，所以必须使用强制推送）。这样在服务器上的最后一次错误提交也彻底消失了。</p>
+<p><strong>注意：</strong>这样操作比较比较危险，例如：在你的 <code>commit</code> 之后别人又提交了新的 <code>commit</code>，那在你强制推送之后，那位仁兄的 <code>commit</code> 也跟着一起消失了，所以不建议这样操作。</p>
+<h2 id="2-2-方法二"><a href="#2-2-方法二" class="headerlink" title="2.2 方法二"></a>2.2 方法二</h2><p>使用以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git revert &lt;commit-ish&gt;...</div></pre></td></tr></table></figure>
+<p><code>git revert</code> 用于反转提交，执行 <code>revert</code> 命令时要求工作树必须是干净的。</p>
+<p><code>git revert</code> 用一个新提交来消除一个历史提交所做的任何修改。</p>
+<p><code>revert</code> 之后你的本地代码会回滚到指定的历史版本，这时你再 <code>git push</code> 既可以把线上的代码更新。（这里不会像 <code>reset</code> 造成冲突的问题）</p>
+<p><code>revert</code> 使用，需要先找到你想回滚版本唯一的 <code>commit</code> 标识代码，可以用 <code>git log</code> 或者在 <code>adgit</code> 搭建的 <code>web</code> 环境历史提交记录里查看。</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">git</span> <span class="keyword">revert </span>c011eb3c20ba6fb38cc94fe5a8dda366a3990c61</div></pre></td></tr></table></figure>
+<p>通常，前几位即可：</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">git</span> <span class="keyword">revert </span>c011eb3</div></pre></td></tr></table></figure>
+<h1 id="三、revert-与-reset-比较"><a href="#三、revert-与-reset-比较" class="headerlink" title="三、revert 与 reset 比较"></a>三、revert 与 reset 比较</h1><p><code>git revert</code> 是用一次新的 <code>commit</code> 来回滚之前的 <code>commit</code>，<code>git reset</code> 是直接删除指定的 <code>commit</code>。</p>
+<p>看似达到的效果是一样的，其实完全不同。</p>
+<p>3.1 上面我们说的如果你已经 <code>push</code> 到线上代码库， <code>reset</code> 删除指定 <code>commit</code> 以后，你 <code>git push</code> 可能导致一大堆冲突。但是 <code>revert</code> 并不会。</p>
+<p>3.2 如果在日后现有分支和历史分支需要合并的时候，<code>reset</code> 恢复部分的代码依然会出现在历史分支里。但是 <code>revert</code> 方向提交的 <code>commit</code> 并不会出现在历史分支里。</p>
+<p>3.3 <code>reset</code> 是在正常的 <code>commit</code> 历史中，删除了指定的 <code>commit</code>，这时 <code>HEAD</code> 是向后移动了，而 <code>revert</code> 是在正常的 <code>commit</code> 历史中再 <code>commit</code> 一次，只不过是反向提交，他的 <code>HEAD</code> 是一直向前的。</p>
+<hr>
+<p><a href="http://yijiebuyi.com/blog/8f985d539566d0bf3b804df6be4e0c90.html" target="_blank" rel="external">参考文章地址</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;总有一天你会遇到下面的问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改完代码匆忙提交，上线发现有问题，怎么办？赶紧回滚。&lt;/li&gt;
+&lt;li&gt;改完代码测试也没有问题，但是上线发现你的修改影响了之前运行正常的代码报错，必须回滚。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这些开发中很常见的问题，所以 &lt;code&gt;git&lt;/code&gt; 的取消提交，回退甚至返回上一版本都是特别重要的。大致分为下面 &lt;code&gt;2&lt;/code&gt; 种情况：&lt;/p&gt;
+&lt;h1 id=&quot;一、没有-push&quot;&gt;&lt;a href=&quot;#一、没有-push&quot; class=&quot;headerlink&quot; title=&quot;一、没有 push&quot;&gt;&lt;/a&gt;一、没有 push&lt;/h1&gt;&lt;p&gt;这种情况发生在你的本地代码仓库，可能你 &lt;code&gt;add&lt;/code&gt;，&lt;code&gt;commit&lt;/code&gt; 以后发现代码有点问题，准备取消提交，用到下面命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git reset [--soft | --mixed | --hard]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker 学习笔记</title>
@@ -754,9 +820,9 @@
       <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
     
     
-      <category term="Gogs" scheme="http://ehlxr.me/tags/Gogs/"/>
-    
       <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
+    
+      <category term="Gogs" scheme="http://ehlxr.me/tags/Gogs/"/>
     
   </entry>
   
@@ -1162,41 +1228,6 @@
       <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
     
       <category term="Node.js" scheme="http://ehlxr.me/tags/Node-js/"/>
-    
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[转]将 Centos 的 yum 源更改为国内的阿里云源</title>
-    <link href="http://ehlxr.me/2016/07/30/%E8%BD%AC-%E5%B0%86-Centos-%E7%9A%84-yum-%E6%BA%90%E6%9B%B4%E6%94%B9%E4%B8%BA%E5%9B%BD%E5%86%85%E7%9A%84%E9%98%BF%E9%87%8C%E4%BA%91%E6%BA%90/"/>
-    <id>http://ehlxr.me/2016/07/30/转-将-Centos-的-yum-源更改为国内的阿里云源/</id>
-    <published>2016-07-30T03:57:59.000Z</published>
-    <updated>2016-11-01T09:31:10.236Z</updated>
-    
-    <content type="html"><![CDATA[<p>阿里云Linux安装镜像源地址：<a href="http://mirrors.aliyun.com/" target="_blank" rel="external">http://mirrors.aliyun.com/</a></p>
-<p>CentOS系统更换软件安装源</p>
-<h3 id="一、备份你的原镜像文件，以免出错后可以恢复。"><a href="#一、备份你的原镜像文件，以免出错后可以恢复。" class="headerlink" title="一、备份你的原镜像文件，以免出错后可以恢复。"></a>一、备份你的原镜像文件，以免出错后可以恢复。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="二、下载新的-CentOS-Base-repo-到-etc-yum-repos-d"><a href="#二、下载新的-CentOS-Base-repo-到-etc-yum-repos-d" class="headerlink" title="二、下载新的 CentOS-Base.repo 到 /etc/yum.repos.d/"></a>二、下载新的 CentOS-Base.repo 到 /etc/yum.repos.d/</h3><h4 id="2-1-CentOS-5"><a href="#2-1-CentOS-5" class="headerlink" title="2.1 CentOS 5"></a>2.1 CentOS 5</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo</div></pre></td></tr></table></figure>
-<h4 id="2-2-CentOS-6"><a href="#2-2-CentOS-6" class="headerlink" title="2.2 CentOS 6"></a>2.2 CentOS 6</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo</div></pre></td></tr></table></figure>
-<h4 id="2-3-CentOS-7"><a href="#2-3-CentOS-7" class="headerlink" title="2.3 CentOS 7"></a>2.3 CentOS 7</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo</div></pre></td></tr></table></figure>
-<h3 id="三、运行-yum-makecache-生成缓存"><a href="#三、运行-yum-makecache-生成缓存" class="headerlink" title="三、运行 yum makecache 生成缓存"></a>三、运行 yum makecache 生成缓存</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">yum clean all</div><div class="line">yum makecache</div></pre></td></tr></table></figure>
-<hr>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;阿里云Linux安装镜像源地址：&lt;a href=&quot;http://mirrors.aliyun.com/&quot;&gt;http://mirrors.aliyun.com/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;CentOS系统更换软件安装源&lt;/p&gt;
-&lt;h3 id=&quot;一、备份你的原镜像文件，以免出错后可以恢复。&quot;&gt;&lt;a href=&quot;#一、备份你的原镜像文件，以免出错后可以恢复。&quot; class=&quot;headerlink&quot; title=&quot;一、备份你的原镜像文件，以免出错后可以恢复。&quot;&gt;&lt;/a&gt;一、备份你的原镜像文件，以免出错后可以恢复。&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
     
       <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
     

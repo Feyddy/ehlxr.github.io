@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/</loc>
+    <lastmod>2016-11-07T09:24:24.757Z</lastmod>
+    <data>
+        <display>
+        <title>[转]Git 版本回滚</title>
+        <pubTime>2016-11-07T08:53:38.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://ehlxr.me/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95-Travis-CI-%E7%BB%93%E5%90%88-Hexo-%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2016-11-03T12:35:22.612Z</lastmod>
     <data>
@@ -93,6 +113,26 @@
     
     
   <url>
+    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
+    <lastmod>2016-11-01T09:31:10.237Z</lastmod>
+    <data>
+        <display>
+        <title>闲言碎语，不知所云...</title>
+        <pubTime>2016-09-28T05:34:18.000Z</pubTime>
+        
+        <tag>杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂谈" url="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://ehlxr.me/2016/10/19/%E8%BD%AC-%E7%94%A8-Markdown-%E5%86%99%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%EF%BC%88Evernote%EF%BC%89/</loc>
     <lastmod>2016-11-01T09:31:10.237Z</lastmod>
     <data>
@@ -108,26 +148,6 @@
            
              
               <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
-    <lastmod>2016-11-01T09:31:10.237Z</lastmod>
-    <data>
-        <display>
-        <title>闲言碎语，不知所云...</title>
-        <pubTime>2016-09-28T05:34:18.000Z</pubTime>
-        
-        <tag>杂谈</tag>
-         
-         
-           
-             
-              <breadCrumb title="杂谈" url="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
           
         </display>
     </data>
@@ -616,9 +636,9 @@
         <title>5 分钟搭建 Git 服务器-Gogs</title>
         <pubTime>2016-09-06T04:15:14.000Z</pubTime>
         
-        <tag>Gogs</tag>
-         
         <tag>Git</tag>
+         
+        <tag>Gogs</tag>
          
          
            

@@ -6,7 +6,7 @@ Allow: /categories/
 Allow: /tags/
 Allow: /about/
 
-Disallow: /vendors/
+Disallow: /lib/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
