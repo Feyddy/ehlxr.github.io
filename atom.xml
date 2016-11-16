@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ehlxr.me/"/>
-  <updated>2016-11-07T09:24:24.757Z</updated>
+  <updated>2016-11-16T09:40:39.422Z</updated>
   <id>http://ehlxr.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/"/>
     <id>http://ehlxr.me/2016/11/07/转-Git-版本回滚/</id>
     <published>2016-11-07T08:53:38.000Z</published>
-    <updated>2016-11-07T09:24:24.757Z</updated>
+    <updated>2016-11-16T09:40:39.422Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>总有一天你会遇到下面的问题：</p>
@@ -144,9 +144,13 @@
     <link href="http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/"/>
     <id>http://ehlxr.me/2016/11/02/测试使用-daocloud-持续构建-Hexo/</id>
     <published>2016-11-02T11:03:06.000Z</published>
-    <updated>2016-11-03T12:35:14.068Z</updated>
+    <updated>2016-11-16T09:52:10.073Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="测试使用-daocloud-持续构建-Hexo"><a href="#测试使用-daocloud-持续构建-Hexo" class="headerlink" title="测试使用 daocloud 持续构建 Hexo"></a>测试使用 daocloud 持续构建 Hexo</h1><h2 id="Coding-Hexo-DaoCloud"><a href="#Coding-Hexo-DaoCloud" class="headerlink" title="Coding Hexo DaoCloud"></a>Coding Hexo DaoCloud</h2><h3 id="看到这边博文，表示持续构建成功！！！"><a href="#看到这边博文，表示持续构建成功！！！" class="headerlink" title="看到这边博文，表示持续构建成功！！！"></a>看到这边博文，表示持续构建成功！！！</h3>]]></content>
+    <content type="html"><![CDATA[<h1 id="测试使用-daocloud-持续构建-Hexo"><a href="#测试使用-daocloud-持续构建-Hexo" class="headerlink" title="测试使用 daocloud 持续构建 Hexo"></a>测试使用 daocloud 持续构建 Hexo</h1><h2 id="Coding-Hexo-DaoCloud"><a href="#Coding-Hexo-DaoCloud" class="headerlink" title="Coding Hexo DaoCloud"></a>Coding Hexo DaoCloud</h2><h3 id="看到这边博文，表示持续构建成功！！！"><a href="#看到这边博文，表示持续构建成功！！！" class="headerlink" title="看到这边博文，表示持续构建成功！！！"></a>看到这边博文，表示持续构建成功！！！</h3><div class="note primary"><p>note test </p>
+</div>
+
+<div class="note danger"><p>note test </p>
+</div>]]></content>
     
     <summary type="html">
     
@@ -820,9 +824,9 @@
       <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
-    
       <category term="Gogs" scheme="http://ehlxr.me/tags/Gogs/"/>
+    
+      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
     
   </entry>
   
@@ -858,9 +862,9 @@
       <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
     
     
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
-    
       <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
+    
+      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
     
   </entry>
   
@@ -1124,9 +1128,9 @@
       <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
     
     
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
-    
       <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
+    
+      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
     
       <category term="GitLab" scheme="http://ehlxr.me/tags/GitLab/"/>
     
@@ -1174,11 +1178,11 @@
       <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
     
     
+      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
+    
       <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
     
       <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
-    
-      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
     
   </entry>
   
@@ -1227,9 +1231,9 @@
     
       <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
     
-      <category term="Node.js" scheme="http://ehlxr.me/tags/Node-js/"/>
-    
       <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
+    
+      <category term="Node.js" scheme="http://ehlxr.me/tags/Node-js/"/>
     
   </entry>
   
