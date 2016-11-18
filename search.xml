@@ -4,6 +4,20 @@
   
     
     <entry>
+      <title><![CDATA[[转]Linux 查看系统内核版本和发行版本]]></title>
+      <url>http://ehlxr.me/2016/11/18/%E8%BD%AC-Linux-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC%E5%92%8C%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/</url>
+      <content type="text"><![CDATA[一、查看 Linux 内核版本命令以下两条命令适合所有 Linux 系统。 1、cat /proc/version12345$ cat /proc/versionLinux version 3.10.0-327.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ) #1 SMP Thu Nov 19 22:10:57 UTC 2015➜ ~ cat /proc/version Linux version 4.4.0-36-generic (buildd@lcy01-01) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) ) #55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016 2、uname -a12345$ uname -aLinux centos 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux➜ ~ uname -aLinux www 4.4.0-36-generic #55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux 二、查看 Linux 系统版本的命令1、lsb_release -a12345678910111213$ lsb_release -aLSB Version: :core-4.1-amd64:core-4.1-noarchDistributor ID: CentOSDescription: CentOS Linux release 7.2.1511 (Core)Release: 7.2.1511Codename: Core➜ ~ lsb_release -aNo LSB modules are available.Distributor ID: UbuntuDescription: Ubuntu 16.04.1 LTSRelease: 16.04Codename: xenial 这个命令适用于所有的 Linux 发行版，包括 Redhat、SuSE、Debian… 等发行版。 有的系统中默认并没有安装 lsb_release，需要安装。下面介绍一下 CentOS 系统中安装方法。 首先查找 lsb_release 安装包： 12345678910$ yum provides lsb_release已加载插件：fastestmirrorLoading mirror speeds from cached hostfile * base: mirrors.btte.net * extras: mirrors.btte.net * updates: mirrors.btte.netredhat-lsb-core-4.1-27.el7.centos.1.i686 : LSB Core module support源 ：base匹配来源：文件名 ：/usr/bin/lsb_release 安装： 1$ sudo yum install -y redhat-lsb-core 2、cat /etc/redhat-release这种方法只适合查看 Redhat 系的 Linux，如：CentOS。 12$ cat /etc/redhat-releaseCentOS Linux release 7.2.1511 (Core) 3、cat /etc/issue此命令适用于所有的 Linux 发行版。 12➜ ~ cat /etc/issueUbuntu 16.04.1 LTS \n \l]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Test daocloud CI]]></title>
+      <url>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</url>
+      <content type="text"><![CDATA[Test daocloud CI]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[[转]Git 版本回滚]]></title>
       <url>http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/</url>
       <content type="text"><![CDATA[总有一天你会遇到下面的问题： 改完代码匆忙提交，上线发现有问题，怎么办？赶紧回滚。 改完代码测试也没有问题，但是上线发现你的修改影响了之前运行正常的代码报错，必须回滚。 这些开发中很常见的问题，所以 git 的取消提交，回退甚至返回上一版本都是特别重要的。大致分为下面 2 种情况： 一、没有 push这种情况发生在你的本地代码仓库，可能你 add，commit 以后发现代码有点问题，准备取消提交，用到下面命令： 1git reset [--soft | --mixed | --hard] 上面常见三种类型 mixed会保留源码，只是将 git commit 和 index 信息回退到了某个版本。 12git reset 默认是 --mixed 模式 git reset --mixed 等价于 git reset soft保留源码，只回退到 commit 信息到某个版本。不涉及 index 的回退，如果还需要提交，直接 commit 即可。 hard源码也会回退到某个版本，commit 和 index 都回回退到某个版本。（注意，这种方式是改变本地代码仓库源码） 二、已经 push2.1 方法一使用 git reset --hard &lt;commit...&gt; 回退本地代码到某个版本。 使用 git push --force 将本次变更强行推送至服务器（因为你线上的代码没有变，线上 commit，index 都没有变，所以必须使用强制推送）。这样在服务器上的最后一次错误提交也彻底消失了。 注意：这样操作比较比较危险，例如：在你的 commit 之后别人又提交了新的 commit，那在你强制推送之后，那位仁兄的 commit 也跟着一起消失了，所以不建议这样操作。 2.2 方法二使用以下命令： 1git revert &lt;commit-ish&gt;... git revert 用于反转提交，执行 revert 命令时要求工作树必须是干净的。 git revert 用一个新提交来消除一个历史提交所做的任何修改。 revert 之后你的本地代码会回滚到指定的历史版本，这时你再 git push 既可以把线上的代码更新。（这里不会像 reset 造成冲突的问题） revert 使用，需要先找到你想回滚版本唯一的 commit 标识代码，可以用 git log 或者在 adgit 搭建的 web 环境历史提交记录里查看。 1git revert c011eb3c20ba6fb38cc94fe5a8dda366a3990c61 通常，前几位即可： 1git revert c011eb3 三、revert 与 reset 比较git revert 是用一次新的 commit 来回滚之前的 commit，git reset 是直接删除指定的 commit。 看似达到的效果是一样的，其实完全不同。 3.1 上面我们说的如果你已经 push 到线上代码库， reset 删除指定 commit 以后，你 git push 可能导致一大堆冲突。但是 revert 并不会。 3.2 如果在日后现有分支和历史分支需要合并的时候，reset 恢复部分的代码依然会出现在历史分支里。但是 revert 方向提交的 commit 并不会出现在历史分支里。 3.3 reset 是在正常的 commit 历史中，删除了指定的 commit，这时 HEAD 是向后移动了，而 revert 是在正常的 commit 历史中再 commit 一次，只不过是反向提交，他的 HEAD 是一直向前的。 参考文章地址]]></content>
@@ -20,7 +34,7 @@
     <entry>
       <title><![CDATA[测试使用 daocloud 持续构建 Hexo]]></title>
       <url>http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/</url>
-      <content type="text"><![CDATA[测试使用 daocloud 持续构建 HexoCoding Hexo DaoCloud看到这边博文，表示持续构建成功！！！note test note test]]></content>
+      <content type="text"><![CDATA[测试使用 daocloud 持续构建 HexoCoding Hexo DaoCloud 看到这边博文，表示持续构建成功！！！]]></content>
     </entry>
 
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ehlxr.me/"/>
-  <updated>2016-11-16T09:40:39.422Z</updated>
+  <updated>2016-11-18T07:19:08.258Z</updated>
   <id>http://ehlxr.me/</id>
   
   <author>
@@ -14,6 +14,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[转]Linux 查看系统内核版本和发行版本</title>
+    <link href="http://ehlxr.me/2016/11/18/%E8%BD%AC-Linux-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC%E5%92%8C%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/"/>
+    <id>http://ehlxr.me/2016/11/18/转-Linux-查看系统内核版本和发行版本/</id>
+    <published>2016-11-18T06:56:43.000Z</published>
+    <updated>2016-11-18T07:19:08.258Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、查看-Linux-内核版本命令"><a href="#一、查看-Linux-内核版本命令" class="headerlink" title="一、查看 Linux 内核版本命令"></a>一、查看 Linux 内核版本命令</h1><p>以下两条命令适合所有 <code>Linux</code> 系统。</p>
+<h2 id="1、cat-proc-version"><a href="#1、cat-proc-version" class="headerlink" title="1、cat /proc/version"></a>1、cat /proc/version</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ cat /proc/version</div><div class="line">Linux version 3.10.0-327.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ) <span class="comment">#1 SMP Thu Nov 19 22:10:57 UTC 2015</span></div><div class="line"></div><div class="line">➜  ~ cat /proc/version   </div><div class="line">Linux version 4.4.0-36-generic (buildd@lcy01-01) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) ) <span class="comment">#55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016</span></div></pre></td></tr></table></figure>
+<h2 id="2、uname-a"><a href="#2、uname-a" class="headerlink" title="2、uname -a"></a>2、uname -a</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ uname <span class="_">-a</span></div><div class="line">Linux centos 3.10.0-327.el7.x86_64 <span class="comment">#1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux</span></div><div class="line"></div><div class="line">➜  ~ uname <span class="_">-a</span></div><div class="line">Linux www 4.4.0-36-generic <span class="comment">#55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="二、查看-Linux-系统版本的命令"><a href="#二、查看-Linux-系统版本的命令" class="headerlink" title="二、查看 Linux 系统版本的命令"></a>二、查看 Linux 系统版本的命令</h1><h2 id="1、lsb-release-a"><a href="#1、lsb-release-a" class="headerlink" title="1、lsb_release -a"></a>1、lsb_release -a</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ lsb_release <span class="_">-a</span></div><div class="line">LSB Version:    :core-4.1-amd64:core-4.1-noarch</div><div class="line">Distributor ID: CentOS</div><div class="line">Description:    CentOS Linux release 7.2.1511 (Core)</div><div class="line">Release:        7.2.1511</div><div class="line">Codename:       Core</div><div class="line"></div><div class="line">➜  ~ lsb_release <span class="_">-a</span></div><div class="line">No LSB modules are available.</div><div class="line">Distributor ID: Ubuntu</div><div class="line">Description:    Ubuntu 16.04.1 LTS</div><div class="line">Release:    16.04</div><div class="line">Codename:   xenial</div></pre></td></tr></table></figure>
+<p>这个命令适用于所有的 <code>Linux</code> 发行版，包括 <code>Redhat</code>、<code>SuSE</code>、<code>Debian…</code> 等发行版。</p>
+<p>有的系统中默认并没有安装 <code>lsb_release</code>，需要安装。下面介绍一下 <code>CentOS</code> 系统中安装方法。</p>
+<p>首先查找 <code>lsb_release</code> 安装包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ yum provides lsb_release</div><div class="line">已加载插件：fastestmirror</div><div class="line">Loading mirror speeds from cached hostfile</div><div class="line"> * base: mirrors.btte.net</div><div class="line"> * extras: mirrors.btte.net</div><div class="line"> * updates: mirrors.btte.net</div><div class="line">redhat-lsb-core-4.1-27.el7.centos.1.i686 : LSB Core module support</div><div class="line">源    ：base</div><div class="line">匹配来源：</div><div class="line">文件名    ：/usr/bin/lsb_release</div></pre></td></tr></table></figure>
+<p>安装：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo yum install -y redhat-lsb-core</div></pre></td></tr></table></figure>
+<h2 id="2、cat-etc-redhat-release"><a href="#2、cat-etc-redhat-release" class="headerlink" title="2、cat /etc/redhat-release"></a>2、cat /etc/redhat-release</h2><p>这种方法只适合查看 <code>Redhat</code> 系的 <code>Linux</code>，如：<code>CentOS</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cat /etc/redhat-release</div><div class="line">CentOS Linux release 7.2.1511 (Core)</div></pre></td></tr></table></figure>
+<h2 id="3、cat-etc-issue"><a href="#3、cat-etc-issue" class="headerlink" title="3、cat /etc/issue"></a>3、cat /etc/issue</h2><p>此命令适用于所有的 <code>Linux</code> 发行版。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">➜  ~ cat /etc/issue</div><div class="line">Ubuntu 16.04.1 LTS \n \l</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、查看-Linux-内核版本命令&quot;&gt;&lt;a href=&quot;#一、查看-Linux-内核版本命令&quot; class=&quot;headerlink&quot; title=&quot;一、查看 Linux 内核版本命令&quot;&gt;&lt;/a&gt;一、查看 Linux 内核版本命令&lt;/h1&gt;&lt;p&gt;以下两条命令适合所有 &lt;code&gt;Linux&lt;/code&gt; 系统。&lt;/p&gt;
+&lt;h2 id=&quot;1、cat-proc-version&quot;&gt;&lt;a href=&quot;#1、cat-proc-version&quot; class=&quot;headerlink&quot; title=&quot;1、cat /proc/version&quot;&gt;&lt;/a&gt;1、cat /proc/version&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ cat /proc/version&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Linux version 3.10.0-327.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ) &lt;span class=&quot;comment&quot;&gt;#1 SMP Thu Nov 19 22:10:57 UTC 2015&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;➜  ~ cat /proc/version   &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Linux version 4.4.0-36-generic (buildd@lcy01-01) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) ) &lt;span class=&quot;comment&quot;&gt;#55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;2、uname-a&quot;&gt;&lt;a href=&quot;#2、uname-a&quot; class=&quot;headerlink&quot; title=&quot;2、uname -a&quot;&gt;&lt;/a&gt;2、uname -a&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ uname &lt;span class=&quot;_&quot;&gt;-a&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Linux centos 3.10.0-327.el7.x86_64 &lt;span class=&quot;comment&quot;&gt;#1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;➜  ~ uname &lt;span class=&quot;_&quot;&gt;-a&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Linux www 4.4.0-36-generic &lt;span class=&quot;comment&quot;&gt;#55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+    
+      <category term="Linux版本" scheme="http://ehlxr.me/tags/Linux%E7%89%88%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Test daocloud CI</title>
+    <link href="http://ehlxr.me/2016/11/18/Test-daocloud-CI/"/>
+    <id>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</id>
+    <published>2016-11-18T01:44:35.000Z</published>
+    <updated>2016-11-18T02:13:00.021Z</updated>
+    
+    <content type="html"><![CDATA[<p>Test daocloud CI</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Test daocloud CI&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="持续构建" scheme="http://ehlxr.me/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+    
+    
+      <category term="持续构建" scheme="http://ehlxr.me/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>[转]Git 版本回滚</title>
@@ -144,13 +208,13 @@
     <link href="http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/"/>
     <id>http://ehlxr.me/2016/11/02/测试使用-daocloud-持续构建-Hexo/</id>
     <published>2016-11-02T11:03:06.000Z</published>
-    <updated>2016-11-16T09:52:10.073Z</updated>
+    <updated>2016-11-18T01:26:48.104Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="测试使用-daocloud-持续构建-Hexo"><a href="#测试使用-daocloud-持续构建-Hexo" class="headerlink" title="测试使用 daocloud 持续构建 Hexo"></a>测试使用 daocloud 持续构建 Hexo</h1><h2 id="Coding-Hexo-DaoCloud"><a href="#Coding-Hexo-DaoCloud" class="headerlink" title="Coding Hexo DaoCloud"></a>Coding Hexo DaoCloud</h2><h3 id="看到这边博文，表示持续构建成功！！！"><a href="#看到这边博文，表示持续构建成功！！！" class="headerlink" title="看到这边博文，表示持续构建成功！！！"></a>看到这边博文，表示持续构建成功！！！</h3><div class="note primary"><p>note test </p>
+    <content type="html"><![CDATA[<h1 id="测试使用-daocloud-持续构建-Hexo"><a href="#测试使用-daocloud-持续构建-Hexo" class="headerlink" title="测试使用 daocloud 持续构建 Hexo"></a>测试使用 daocloud 持续构建 Hexo</h1><div class="note danger"><p>Coding Hexo DaoCloud </p>
 </div>
-
-<div class="note danger"><p>note test </p>
-</div>]]></content>
+<div class="note primary"><p>看到这边博文，表示持续构建成功！！！ </p>
+</div>
+]]></content>
     
     <summary type="html">
     
@@ -1133,107 +1197,6 @@
       <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
     
       <category term="GitLab" scheme="http://ehlxr.me/tags/GitLab/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 7 安装最新的 Git</title>
-    <link href="http://ehlxr.me/2016/07/30/CentOS-7-%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%9A%84-Git/"/>
-    <id>http://ehlxr.me/2016/07/30/CentOS-7-安装最新的-Git/</id>
-    <published>2016-07-30T14:12:43.000Z</published>
-    <updated>2016-11-01T09:31:10.209Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>yum 源仓库里的 Git 版本更新不及时，最新版本的 Git 是 1.8.3.1，但是官方最新版本已经到了 2.9.2。想要安装最新版本的的 Git，只能下载源码进行安装。</p>
-</blockquote>
-<h1 id="1-查看-yum-源仓库的-Git-信息："><a href="#1-查看-yum-源仓库的-Git-信息：" class="headerlink" title="1. 查看 yum 源仓库的 Git 信息："></a>1. 查看 yum 源仓库的 Git 信息：</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># yum info git</div></pre></td></tr></table></figure>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/20160730222608.png" alt=""></p>
-<p>可以看出，截至目前，yum 源仓库中最新的 Git 版本才 1.8.3.1，而查看最<a href="https://github.com/git/git/releases" target="_blank" rel="external">新的 Git 发布版本</a>，已经 2.9.2 了。</p>
-<a id="more"></a>
-<h1 id="2-依赖库安装"><a href="#2-依赖库安装" class="headerlink" title="2. 依赖库安装"></a>2. 依赖库安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel</div><div class="line"># yum install  gcc perl-ExtUtils-MakeMaker</div></pre></td></tr></table></figure>
-<h1 id="3-卸载低版本的-Git"><a href="#3-卸载低版本的-Git" class="headerlink" title="3. 卸载低版本的 Git"></a>3. 卸载低版本的 Git</h1><p>通过命令：<code>git –-version</code> 查看系统带的版本，Git 版本是： <code>1.8.3.1</code>，所以先要卸载低版本的 Git，命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># yum remove git</div></pre></td></tr></table></figure>
-<h1 id="4-下载新版的-Git-源码包"><a href="#4-下载新版的-Git-源码包" class="headerlink" title="4. 下载新版的 Git 源码包"></a>4. 下载新版的 Git 源码包</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># wget https://github.com/git/git/archive/v2.9.2.tar.gz</div></pre></td></tr></table></figure>
-<p>也可以离线下载，然后传到 CentOS 系统中指定的目录下。</p>
-<h1 id="5-解压到指定目录"><a href="#5-解压到指定目录" class="headerlink" title="5. 解压到指定目录"></a>5. 解压到指定目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"># tar -xzvf v2.9.2.tar.gz -C ~/app/</div></pre></td></tr></table></figure>
-<h1 id="6-安装-Git"><a href="#6-安装-Git" class="headerlink" title="6. 安装 Git"></a>6. 安装 Git</h1><p>分别执行以下命令进行编译安装，编译过程可能比较漫长，请耐心等待完成。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"># cd git-2.9.2</div><div class="line"># make prefix=/usr/local/git all</div><div class="line"># make prefix=/usr/local/git install</div></pre></td></tr></table></figure>
-<h1 id="7-添加到环境变量"><a href="#7-添加到环境变量" class="headerlink" title="7. 添加到环境变量"></a>7. 添加到环境变量</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># echo &quot;export PATH=$PATH:/usr/local/git/bin&quot; &gt;&gt; /etc/bashrc</div><div class="line"># source /etc/bashrc # 实时生效</div></pre></td></tr></table></figure>
-<h1 id="8-查看版本号"><a href="#8-查看版本号" class="headerlink" title="8. 查看版本号"></a>8. 查看版本号</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># git --version</div><div class="line">git version 2.9.2</div></pre></td></tr></table></figure>
-<p>至此，CentOS 就安装上了最新版本的 Git。</p>
-<hr>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;yum 源仓库里的 Git 版本更新不及时，最新版本的 Git 是 1.8.3.1，但是官方最新版本已经到了 2.9.2。想要安装最新版本的的 Git，只能下载源码进行安装。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;1-查看-yum-源仓库的-Git-信息：&quot;&gt;&lt;a href=&quot;#1-查看-yum-源仓库的-Git-信息：&quot; class=&quot;headerlink&quot; title=&quot;1. 查看 yum 源仓库的 Git 信息：&quot;&gt;&lt;/a&gt;1. 查看 yum 源仓库的 Git 信息：&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;# yum info git&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&quot;http://oapjp6spr.bkt.clouddn.com/20160730222608.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;可以看出，截至目前，yum 源仓库中最新的 Git 版本才 1.8.3.1，而查看最&lt;a href=&quot;https://github.com/git/git/releases&quot;&gt;新的 Git 发布版本&lt;/a&gt;，已经 2.9.2 了。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
-    
-    
-      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
-    
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
-    
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS 7 安装 Node.js</title>
-    <link href="http://ehlxr.me/2016/07/30/CentOS-7-%E5%AE%89%E8%A3%85-Node-js/"/>
-    <id>http://ehlxr.me/2016/07/30/CentOS-7-安装-Node-js/</id>
-    <published>2016-07-30T08:19:03.000Z</published>
-    <updated>2016-11-01T09:31:10.204Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</a></p>
-</blockquote>
-<h1 id="1-下载源码安装文件"><a href="#1-下载源码安装文件" class="headerlink" title="1. 下载源码安装文件"></a>1. 下载源码安装文件</h1><h2 id="1-1-在线安装"><a href="#1-1-在线安装" class="headerlink" title="1.1 在线安装"></a>1.1 在线安装</h2><p>通过以下命令下载源文件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://nodejs.org/dist/v4.4.7/node-v4.4.7.tar.gz</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h2 id="1-2-离线安装"><a href="#1-2-离线安装" class="headerlink" title="1.2 离线安装"></a>1.2 离线安装</h2><p>如果网络不好，可以通过<a href="https://nodejs.org/en/download/" target="_blank" rel="external">官方网站</a>下载，然后上传到 CentOS 系统中，下载如图所示：</p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/20160730163835.png" alt=""></p>
-<p>我这儿官方网站是无法正常访问的，需要一些手段（大家懂得），所以在网盘备份一份，地址：<a href="http://pan.baidu.com/s/1bpIAUAz" target="_blank" rel="external">http://pan.baidu.com/s/1bpIAUAz</a></p>
-<h1 id="2-编译安装"><a href="#2-编译安装" class="headerlink" title="2. 编译安装"></a>2. 编译安装</h1><h2 id="2-1-解压文件到指定的目录"><a href="#2-1-解压文件到指定的目录" class="headerlink" title="2.1 解压文件到指定的目录"></a>2.1 解压文件到指定的目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -xzvf node-v4.4.7.tar.gz -C app/</div></pre></td></tr></table></figure>
-<h2 id="2-2-安装依赖包"><a href="#2-2-安装依赖包" class="headerlink" title="2.2 安装依赖包"></a>2.2 安装依赖包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install gcc gcc-c++</div></pre></td></tr></table></figure>
-<h2 id="2-3-配置安装"><a href="#2-3-配置安装" class="headerlink" title="2.3 配置安装"></a>2.3 配置安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./configure</div></pre></td></tr></table></figure>
-<p>./configure 是源代码安装的第一步，主要的作用是对即将安装的软件进行配置，检查当前的环境是否满足要安装软件的依赖关系，生成 makefile文件，以便你可以用 make 和 make install 来编译和安装程序。</p>
-<h2 id="2-4-编译安装"><a href="#2-4-编译安装" class="headerlink" title="2.4 编译安装"></a>2.4 编译安装</h2><p>编译命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make</div></pre></td></tr></table></figure>
-<p>编译的过程会花很长一段时间，等编译完成再执行安装命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make install</div></pre></td></tr></table></figure>
-<h1 id="3-检查安装"><a href="#3-检查安装" class="headerlink" title="3. 检查安装"></a>3. 检查安装</h1><p>运行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node --version</div></pre></td></tr></table></figure>
-<p>若输出对应的版本号，则安装成功。</p>
-<hr>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;1-下载源码安装文件&quot;&gt;&lt;a href=&quot;#1-下载源码安装文件&quot; class=&quot;headerlink&quot; title=&quot;1. 下载源码安装文件&quot;&gt;&lt;/a&gt;1. 下载源码安装文件&lt;/h1&gt;&lt;h2 id=&quot;1-1-在线安装&quot;&gt;&lt;a href=&quot;#1-1-在线安装&quot; class=&quot;headerlink&quot; title=&quot;1.1 在线安装&quot;&gt;&lt;/a&gt;1.1 在线安装&lt;/h2&gt;&lt;p&gt;通过以下命令下载源文件：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;wget https://nodejs.org/dist/v4.4.7/node-v4.4.7.tar.gz&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
-    
-      <category term="Node.js" scheme="http://ehlxr.me/tags/Node-js/"/>
-    
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
     
   </entry>
   
