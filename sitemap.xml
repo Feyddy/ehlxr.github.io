@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</loc>
+    
+    <lastmod>2016-11-30T13:18:00.562Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ehlxr.me/2016/11/30/%E5%BF%99%E5%BF%99%E7%A2%8C%E7%A2%8C%E7%9A%84%E5%8D%81%E4%B8%80%E6%9C%88%E4%BB%BD/</loc>
+    
+    <lastmod>2016-11-30T13:08:26.086Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ehlxr.me/about/index.html</loc>
     
-    <lastmod>2016-11-19T04:16:54.804Z</lastmod>
+    <lastmod>2016-11-29T04:09:34.131Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ehlxr.me/404.html</loc>
+    
+    <lastmod>2016-11-28T05:55:40.859Z</lastmod>
     
   </url>
   
@@ -26,13 +47,6 @@
     <loc>http://ehlxr.me/2016/11/18/%E8%BD%AC-Linux-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC%E5%92%8C%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/</loc>
     
     <lastmod>2016-11-18T07:19:08.258Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</loc>
-    
-    <lastmod>2016-11-18T02:13:00.021Z</lastmod>
     
   </url>
   
@@ -72,14 +86,14 @@
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/10/19/%E8%BD%AC-%E7%94%A8-Markdown-%E5%86%99%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%EF%BC%88Evernote%EF%BC%89/</loc>
+    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
     
     <lastmod>2016-11-01T09:31:10.237Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
+    <loc>http://ehlxr.me/2016/10/19/%E8%BD%AC-%E7%94%A8-Markdown-%E5%86%99%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%EF%BC%88Evernote%EF%BC%89/</loc>
     
     <lastmod>2016-11-01T09:31:10.237Z</lastmod>
     

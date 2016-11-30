@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[忙忙碌碌的十一月份]]></title>
+      <url>http://ehlxr.me/2016/11/30/%E5%BF%99%E5%BF%99%E7%A2%8C%E7%A2%8C%E7%9A%84%E5%8D%81%E4%B8%80%E6%9C%88%E4%BB%BD/</url>
+      <content type="text"><![CDATA[早就有计划在西安买房，一直觉得还早，主要是没钱，近期有人肯借钱就想看看市场。买房需要做很多准备工作，本想着慢慢先看着，一边从同学朋友那里打听消息，一边从网上看各个楼盘信息，怎奈越看越着急，就想一下子赶紧买了。看中的两个楼盘，价格其实都远远超过自己的预算和目前能承受的能力，不得不说我是一个容易被蛊惑的人，听着置业顾问的天花乱坠的描述，有好几次都差点都掉坑里了。 不得不吐槽ZF的户口、档案制度，不知道坑了多少人。上大学的时候响应学校的号召，傻乎乎的把户口从老家迁到了学校，现在也没想明白把户口迁过去是为了什么。毕业后二不拉几的嫌麻烦就随大流没有及时把户口、档案迁回去。买房按揭要户口，才意识到这个大坑不尽早填上只会越来越麻烦。为了搞清楚怎样能把户口迁回去，我战战兢兢的打通了相关部门的服务电话号（还好还好，才打了几十次就有人接听了），服务态度和传说中的“为人民服务”一样，果然没让我失望，折腾了整整一天，总算搞明白了大概该怎么弄。还好有同学在，不用自己再去跑一趟，准备好相关的资料邮寄过去就只能祈祷了… 听说十二月份房价要涨，今天最后一天了，中介也“劝告”了我好几次赶紧出手，自己也心动了无数次。十一月份马上结束了，纠结的心该平静了些了，终究还是没有出手…]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[[转]Linux 查看系统内核版本和发行版本]]></title>
       <url>http://ehlxr.me/2016/11/18/%E8%BD%AC-Linux-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC%E5%92%8C%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/</url>
       <content type="text"><![CDATA[一、查看 Linux 内核版本命令以下两条命令适合所有 Linux 系统。 1、cat /proc/version12345$ cat /proc/versionLinux version 3.10.0-327.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ) #1 SMP Thu Nov 19 22:10:57 UTC 2015➜ ~ cat /proc/version Linux version 4.4.0-36-generic (buildd@lcy01-01) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.2) ) #55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016 2、uname -a12345$ uname -aLinux centos 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux➜ ~ uname -aLinux www 4.4.0-36-generic #55-Ubuntu SMP Thu Aug 11 18:01:55 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux 二、查看 Linux 系统版本的命令1、lsb_release -a12345678910111213$ lsb_release -aLSB Version: :core-4.1-amd64:core-4.1-noarchDistributor ID: CentOSDescription: CentOS Linux release 7.2.1511 (Core)Release: 7.2.1511Codename: Core➜ ~ lsb_release -aNo LSB modules are available.Distributor ID: UbuntuDescription: Ubuntu 16.04.1 LTSRelease: 16.04Codename: xenial 这个命令适用于所有的 Linux 发行版，包括 Redhat、SuSE、Debian… 等发行版。 有的系统中默认并没有安装 lsb_release，需要安装。下面介绍一下 CentOS 系统中安装方法。 首先查找 lsb_release 安装包： 12345678910$ yum provides lsb_release已加载插件：fastestmirrorLoading mirror speeds from cached hostfile * base: mirrors.btte.net * extras: mirrors.btte.net * updates: mirrors.btte.netredhat-lsb-core-4.1-27.el7.centos.1.i686 : LSB Core module support源 ：base匹配来源：文件名 ：/usr/bin/lsb_release 安装： 1$ sudo yum install -y redhat-lsb-core 2、cat /etc/redhat-release这种方法只适合查看 Redhat 系的 Linux，如：CentOS。 12$ cat /etc/redhat-releaseCentOS Linux release 7.2.1511 (Core) 3、cat /etc/issue此命令适用于所有的 Linux 发行版。 12➜ ~ cat /etc/issueUbuntu 16.04.1 LTS \n \l]]></content>

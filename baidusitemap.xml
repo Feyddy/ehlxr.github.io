@@ -3,6 +3,47 @@
 
 
     
+  <url>
+    <loc>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</loc>
+    <lastmod>2016-11-30T13:18:00.562Z</lastmod>
+    <data>
+        <display>
+        <title>Test daocloud CI</title>
+        <pubTime>2016-11-18T01:44:35.000Z</pubTime>
+        
+        <tag>持续构建</tag>
+         
+         
+           
+             
+              <breadCrumb title="持续构建" url="http://ehlxr.me/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://ehlxr.me/2016/11/30/%E5%BF%99%E5%BF%99%E7%A2%8C%E7%A2%8C%E7%9A%84%E5%8D%81%E4%B8%80%E6%9C%88%E4%BB%BD/</loc>
+    <lastmod>2016-11-30T13:08:26.086Z</lastmod>
+    <data>
+        <display>
+        <title>忙忙碌碌的十一月份</title>
+        <pubTime>2016-11-30T12:04:13.000Z</pubTime>
+        
+        <tag>杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂谈" url="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
     
     
@@ -22,26 +63,6 @@
            
              
               <breadCrumb title="Linux" url="http://ehlxr.me/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</loc>
-    <lastmod>2016-11-18T02:13:00.021Z</lastmod>
-    <data>
-        <display>
-        <title>Test daocloud CI</title>
-        <pubTime>2016-11-18T01:44:35.000Z</pubTime>
-        
-        <tag>持续构建</tag>
-         
-         
-           
-             
-              <breadCrumb title="持续构建" url="http://ehlxr.me/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
           
         </display>
     </data>
@@ -155,26 +176,6 @@
 
     
   <url>
-    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
-    <lastmod>2016-11-01T09:31:10.237Z</lastmod>
-    <data>
-        <display>
-        <title>闲言碎语，不知所云...</title>
-        <pubTime>2016-09-28T05:34:18.000Z</pubTime>
-        
-        <tag>杂谈</tag>
-         
-         
-           
-             
-              <breadCrumb title="杂谈" url="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://ehlxr.me/2016/10/19/%E8%BD%AC-%E7%94%A8-Markdown-%E5%86%99%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%EF%BC%88Evernote%EF%BC%89/</loc>
     <lastmod>2016-11-01T09:31:10.237Z</lastmod>
     <data>
@@ -190,6 +191,26 @@
            
              
               <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
+    <lastmod>2016-11-01T09:31:10.237Z</lastmod>
+    <data>
+        <display>
+        <title>闲言碎语，不知所云...</title>
+        <pubTime>2016-09-28T05:34:18.000Z</pubTime>
+        
+        <tag>杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂谈" url="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
           
         </display>
     </data>
@@ -259,6 +280,26 @@
 
     
   <url>
+    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
+    <lastmod>2016-11-01T09:31:10.232Z</lastmod>
+    <data>
+        <display>
+        <title>设置 Sublime Text3 主题透明</title>
+        <pubTime>2016-10-24T09:30:55.000Z</pubTime>
+        
+        <tag>Sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://ehlxr.me/2016/07/21/%E8%BD%AC-JMS%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
     <lastmod>2016-11-01T09:31:10.232Z</lastmod>
     <data>
@@ -274,26 +315,6 @@
            
              
               <breadCrumb title="Java开发技术" url="http://ehlxr.me/categories/Java%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
-    <lastmod>2016-11-01T09:31:10.232Z</lastmod>
-    <data>
-        <display>
-        <title>设置 Sublime Text3 主题透明</title>
-        <pubTime>2016-10-24T09:30:55.000Z</pubTime>
-        
-        <tag>Sublime</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
