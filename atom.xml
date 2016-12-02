@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ehlxr.me/"/>
-  <updated>2016-12-02T12:48:02.031Z</updated>
+  <updated>2016-12-02T12:59:12.748Z</updated>
   <id>http://ehlxr.me/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <link href="http://ehlxr.me/2016/12/02/Vim-Tab-%E8%AE%BE%E7%BD%AE%E4%B8%BA-4-%E4%B8%AA%E7%A9%BA%E6%A0%BC/"/>
     <id>http://ehlxr.me/2016/12/02/Vim-Tab-设置为-4-个空格/</id>
     <published>2016-12-02T12:46:05.000Z</published>
-    <updated>2016-12-02T12:48:02.031Z</updated>
+    <updated>2016-12-02T12:59:12.748Z</updated>
     
     <content type="html"><![CDATA[<p>在 <code>vim</code> 的配置文件中（Liunx：<code>/etc/vimrc</code>）中添加以下代码后，重启 <code>vim</code> 即可实现按 <code>TAB</code> 产生 <code>4</code> 个空格：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">set</span> ts=4 <span class="comment"># 注：ts 是 tabstop 的缩写，设 TAB 宽 4 个空格</span></div><div class="line"><span class="built_in">set</span> expandtab</div></pre></td></tr></table></figure>
 <p>对于已保存的文件，可以使用下面的方法进行空格和 <code>TAB</code> 的替换：</p>
 <p><code>TAB</code> 替换为空格：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">:<span class="built_in">set</span> ts=4</div><div class="line">:<span class="built_in">set</span> expandtab</div><div class="line">:%retab!</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>空格替换为 <code>TAB</code>：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">:<span class="built_in">set</span> ts=4</div><div class="line">:<span class="built_in">set</span> noexpandtab</div><div class="line">:%retab!</div></pre></td></tr></table></figure>
 <p>加 <code>!</code> 是用于处理非空白字符之后的 <code>TAB</code>，即所有的 <code>TAB</code>，若不加 <code>!</code>，则只处理行首的 <code>TAB</code>。</p>
@@ -35,7 +36,10 @@
     <summary type="html">
     
       &lt;p&gt;在 &lt;code&gt;vim&lt;/code&gt; 的配置文件中（Liunx：&lt;code&gt;/etc/vimrc&lt;/code&gt;）中添加以下代码后，重启 &lt;code&gt;vim&lt;/code&gt; 即可实现按 &lt;code&gt;TAB&lt;/code&gt; 产生 &lt;code&gt;4&lt;/code&gt; 个空格：&lt;/p&gt;
-&lt;f
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;set&lt;/span&gt; ts=4 &lt;span class=&quot;comment&quot;&gt;# 注：ts 是 tabstop 的缩写，设 TAB 宽 4 个空格&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;set&lt;/span&gt; expandtab&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;对于已保存的文件，可以使用下面的方法进行空格和 &lt;code&gt;TAB&lt;/code&gt; 的替换：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;TAB&lt;/code&gt; 替换为空格：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;:&lt;span class=&quot;built_in&quot;&gt;set&lt;/span&gt; ts=4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;:&lt;span class=&quot;built_in&quot;&gt;set&lt;/span&gt; expandtab&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;:%retab!&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     

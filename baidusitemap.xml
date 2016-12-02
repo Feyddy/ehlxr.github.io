@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://ehlxr.me/2016/12/02/Vim-Tab-%E8%AE%BE%E7%BD%AE%E4%B8%BA-4-%E4%B8%AA%E7%A9%BA%E6%A0%BC/</loc>
-    <lastmod>2016-12-02T12:48:02.031Z</lastmod>
+    <lastmod>2016-12-02T12:59:12.748Z</lastmod>
     <data>
         <display>
         <title>Vim Tab 设置为 4 个空格</title>
@@ -300,6 +300,26 @@
 
     
   <url>
+    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
+    <lastmod>2016-11-01T09:31:10.232Z</lastmod>
+    <data>
+        <display>
+        <title>设置 Sublime Text3 主题透明</title>
+        <pubTime>2016-10-24T09:30:55.000Z</pubTime>
+        
+        <tag>Sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://ehlxr.me/2016/07/21/%E8%BD%AC-JMS%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
     <lastmod>2016-11-01T09:31:10.232Z</lastmod>
     <data>
@@ -315,26 +335,6 @@
            
              
               <breadCrumb title="Java开发技术" url="http://ehlxr.me/categories/Java%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
-    <lastmod>2016-11-01T09:31:10.232Z</lastmod>
-    <data>
-        <display>
-        <title>设置 Sublime Text3 主题透明</title>
-        <pubTime>2016-10-24T09:30:55.000Z</pubTime>
-        
-        <tag>Sublime</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -490,6 +490,26 @@
 
     
   <url>
+    <loc>http://ehlxr.me/2016/07/25/Sublime-Text-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2016-11-01T09:31:10.215Z</lastmod>
+    <data>
+        <display>
+        <title>Sublime Text 插件安装</title>
+        <pubTime>2016-07-25T13:06:57.000Z</pubTime>
+        
+        <tag>Sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://ehlxr.me/2016/07/28/Oracle-%E4%B8%8E-MySQL-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2016-11-01T09:31:10.215Z</lastmod>
     <data>
@@ -505,26 +525,6 @@
            
              
               <breadCrumb title="SQL" url="http://ehlxr.me/categories/SQL/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://ehlxr.me/2016/07/25/Sublime-Text-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2016-11-01T09:31:10.215Z</lastmod>
-    <data>
-        <display>
-        <title>Sublime Text 插件安装</title>
-        <pubTime>2016-07-25T13:06:57.000Z</pubTime>
-        
-        <tag>Sublime</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
