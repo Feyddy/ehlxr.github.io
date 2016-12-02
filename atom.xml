@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ehlxr.me/"/>
-  <updated>2016-11-30T13:08:26.086Z</updated>
+  <updated>2016-12-02T12:48:02.031Z</updated>
   <id>http://ehlxr.me/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vim Tab 设置为 4 个空格</title>
+    <link href="http://ehlxr.me/2016/12/02/Vim-Tab-%E8%AE%BE%E7%BD%AE%E4%B8%BA-4-%E4%B8%AA%E7%A9%BA%E6%A0%BC/"/>
+    <id>http://ehlxr.me/2016/12/02/Vim-Tab-设置为-4-个空格/</id>
+    <published>2016-12-02T12:46:05.000Z</published>
+    <updated>2016-12-02T12:48:02.031Z</updated>
+    
+    <content type="html"><![CDATA[<p>在 <code>vim</code> 的配置文件中（Liunx：<code>/etc/vimrc</code>）中添加以下代码后，重启 <code>vim</code> 即可实现按 <code>TAB</code> 产生 <code>4</code> 个空格：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">set</span> ts=4 <span class="comment"># 注：ts 是 tabstop 的缩写，设 TAB 宽 4 个空格</span></div><div class="line"><span class="built_in">set</span> expandtab</div></pre></td></tr></table></figure>
+<p>对于已保存的文件，可以使用下面的方法进行空格和 <code>TAB</code> 的替换：</p>
+<p><code>TAB</code> 替换为空格：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">:<span class="built_in">set</span> ts=4</div><div class="line">:<span class="built_in">set</span> expandtab</div><div class="line">:%retab!</div></pre></td></tr></table></figure>
+<p>空格替换为 <code>TAB</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">:<span class="built_in">set</span> ts=4</div><div class="line">:<span class="built_in">set</span> noexpandtab</div><div class="line">:%retab!</div></pre></td></tr></table></figure>
+<p>加 <code>!</code> 是用于处理非空白字符之后的 <code>TAB</code>，即所有的 <code>TAB</code>，若不加 <code>!</code>，则只处理行首的 <code>TAB</code>。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在 &lt;code&gt;vim&lt;/code&gt; 的配置文件中（Liunx：&lt;code&gt;/etc/vimrc&lt;/code&gt;）中添加以下代码后，重启 &lt;code&gt;vim&lt;/code&gt; 即可实现按 &lt;code&gt;TAB&lt;/code&gt; 产生 &lt;code&gt;4&lt;/code&gt; 个空格：&lt;/p&gt;
+&lt;f
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Vim" scheme="http://ehlxr.me/tags/Vim/"/>
+    
+  </entry>
   
   <entry>
     <title>忙忙碌碌的十一月份</title>
@@ -955,9 +986,9 @@
       <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
     
     
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
-    
       <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
+    
+      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
     
   </entry>
   
@@ -1089,64 +1120,6 @@
       <category term="GitHub" scheme="http://ehlxr.me/tags/GitHub/"/>
     
       <category term="Hexo" scheme="http://ehlxr.me/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>[转]Java程序员情书</title>
-    <link href="http://ehlxr.me/2016/08/22/%E8%BD%AC-Java%E7%A8%8B%E5%BA%8F%E5%91%98%E6%83%85%E4%B9%A6/"/>
-    <id>http://ehlxr.me/2016/08/22/转-Java程序员情书/</id>
-    <published>2016-08-22T06:24:15.000Z</published>
-    <updated>2016-11-01T09:31:10.233Z</updated>
-    
-    <content type="html"><![CDATA[<p>我能抽象出整个世界．．． </p>
-<p>但是我却不能抽象出你．．． </p>
-<p>你肯定是一个单例，因为你是那样的独一无二… </p>
-<p>所以我的世界并不完整．．． </p>
-<p>我可以重载甚至覆盖这个世界里的任何一种方法．．． </p>
-<p>但是却不能覆盖对你的思念．．． </p>
-<p>也许命中注定了 你与我存在于不同的包里… </p>
-<p>在你的世界里，你被烙上了私有的属性… </p>
-<a id="more"></a>
-<p>我用尽全身力气，也找不到访问你的接口… </p>
-<p>我不愿就此甘心，找到了藏身在神殿的巫师，教会了我穿越时空的方法… </p>
-<p>终于，我用反射这把利剑，打开了你空间的缺口… </p>
-<p>并发现了接近你的秘密… </p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/222wqklkmlqej5-lp.jpg" alt="enter description here"></p>
-<p>当我迫不及待地调用了爱你这个方法．．． </p>
-<p>并义无返顾的把自己作为参数传进这个方法时．．． </p>
-<p>我才发现爱上你是一个没有终止条件的递归．．． </p>
-<p>它不停的返回我对你的思念并压入我心里的堆栈．．． </p>
-<p>在这无尽的黑夜中 ，终于体验到你对我爱的回调… </p>
-<p>我的内存里已经再也装不下别人… </p>
-<p>当我以为将与你在这个死循环中天荒地老时… </p>
-<p>万恶的系统抛出了爱的异常… </p>
-<p>此刻我才发现，我不过是操纵于虚拟机下的一个线程，你也是… </p>
-<p>但我毫不后悔，因为在爱的洗礼之后… </p>
-<p>我看见了一个新的生命，那是我们的, 继承</p>
-<hr>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="110" src="http://music.163.com/outchain/player?type=0&id=448161195&auto=1&height=90"></iframe>
-
-
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我能抽象出整个世界．．． &lt;/p&gt;
-&lt;p&gt;但是我却不能抽象出你．．． &lt;/p&gt;
-&lt;p&gt;你肯定是一个单例，因为你是那样的独一无二… &lt;/p&gt;
-&lt;p&gt;所以我的世界并不完整．．． &lt;/p&gt;
-&lt;p&gt;我可以重载甚至覆盖这个世界里的任何一种方法．．． &lt;/p&gt;
-&lt;p&gt;但是却不能覆盖对你的思念．．． &lt;/p&gt;
-&lt;p&gt;也许命中注定了 你与我存在于不同的包里… &lt;/p&gt;
-&lt;p&gt;在你的世界里，你被烙上了私有的属性… &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="杂谈" scheme="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
-    
-    
-      <category term="杂谈" scheme="http://ehlxr.me/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
