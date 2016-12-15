@@ -124,7 +124,7 @@
     <link href="http://ehlxr.me/2016/11/18/Test-daocloud-CI/"/>
     <id>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</id>
     <published>2016-11-18T01:44:35.000Z</published>
-    <updated>2016-11-30T13:18:00.562Z</updated>
+    <updated>2016-12-06T13:24:21.699Z</updated>
     
     <content type="html"><![CDATA[<p>Test daocloud CI</p>
 ]]></content>
@@ -148,7 +148,7 @@
     <link href="http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/"/>
     <id>http://ehlxr.me/2016/11/07/转-Git-版本回滚/</id>
     <published>2016-11-07T08:53:38.000Z</published>
-    <updated>2016-11-16T09:40:39.422Z</updated>
+    <updated>2016-12-14T09:50:43.365Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>总有一天你会遇到下面的问题：</p>
@@ -158,7 +158,7 @@
 </ul>
 </blockquote>
 <p>这些开发中很常见的问题，所以 <code>git</code> 的取消提交，回退甚至返回上一版本都是特别重要的。大致分为下面 <code>2</code> 种情况：</p>
-<h1 id="一、没有-push"><a href="#一、没有-push" class="headerlink" title="一、没有 push"></a>一、没有 push</h1><p>这种情况发生在你的本地代码仓库，可能你 <code>add</code>，<code>commit</code> 以后发现代码有点问题，准备取消提交，用到下面命令：</p>
+<h1 id="一、没有-push"><a href="#一、没有-push" class="headerlink" title="一、没有 push"></a>一、没有 push</h1><p>这种情况发生在你的本地代码仓库，可能你 <code>add</code>，<code>commit</code> 以后发现代码有点问题，准备取消提交，用到下面命令回退到某个版本：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset [--soft | --mixed | --hard]</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>上面常见三种类型</p>
@@ -171,10 +171,9 @@
 <p><strong>注意：</strong>这样操作比较比较危险，例如：在你的 <code>commit</code> 之后别人又提交了新的 <code>commit</code>，那在你强制推送之后，那位仁兄的 <code>commit</code> 也跟着一起消失了，所以不建议这样操作。</p>
 <h2 id="2-2-方法二"><a href="#2-2-方法二" class="headerlink" title="2.2 方法二"></a>2.2 方法二</h2><p>使用以下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git revert &lt;commit-ish&gt;...</div></pre></td></tr></table></figure>
-<p><code>git revert</code> 用于反转提交，执行 <code>revert</code> 命令时要求工作树必须是干净的。</p>
-<p><code>git revert</code> 用一个新提交来消除一个历史提交所做的任何修改。</p>
-<p><code>revert</code> 之后你的本地代码会回滚到指定的历史版本，这时你再 <code>git push</code> 既可以把线上的代码更新。（这里不会像 <code>reset</code> 造成冲突的问题）</p>
-<p><code>revert</code> 使用，需要先找到你想回滚版本唯一的 <code>commit</code> 标识代码，可以用 <code>git log</code> 或者在 <code>adgit</code> 搭建的 <code>web</code> 环境历史提交记录里查看。</p>
+<p><code>git revert</code> 用于反转提交，用一个新提交来撤销某次提交，执行 <code>revert</code> 命令时要求工作树必须是干净的。</p>
+<p><code>revert</code> 之后你再 <code>git push</code> 既可以把线上的代码更新。（这里不会像 <code>reset</code> 造成冲突的问题）</p>
+<p><code>revert</code> 使用需要先找到你想回滚版本唯一的 <code>commit</code> 标识代码，可以用 <code>git log</code> 或者在 <code>adgit</code> 搭建的 <code>web</code> 环境历史提交记录里查看。</p>
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">git</span> <span class="keyword">revert </span>c011eb3c20ba6fb38cc94fe5a8dda366a3990c61</div></pre></td></tr></table></figure>
 <p>通常，前几位即可：</p>
 <figure class="highlight armasm"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">git</span> <span class="keyword">revert </span>c011eb3</div></pre></td></tr></table></figure>
@@ -197,7 +196,7 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;这些开发中很常见的问题，所以 &lt;code&gt;git&lt;/code&gt; 的取消提交，回退甚至返回上一版本都是特别重要的。大致分为下面 &lt;code&gt;2&lt;/code&gt; 种情况：&lt;/p&gt;
-&lt;h1 id=&quot;一、没有-push&quot;&gt;&lt;a href=&quot;#一、没有-push&quot; class=&quot;headerlink&quot; title=&quot;一、没有 push&quot;&gt;&lt;/a&gt;一、没有 push&lt;/h1&gt;&lt;p&gt;这种情况发生在你的本地代码仓库，可能你 &lt;code&gt;add&lt;/code&gt;，&lt;code&gt;commit&lt;/code&gt; 以后发现代码有点问题，准备取消提交，用到下面命令：&lt;/p&gt;
+&lt;h1 id=&quot;一、没有-push&quot;&gt;&lt;a href=&quot;#一、没有-push&quot; class=&quot;headerlink&quot; title=&quot;一、没有 push&quot;&gt;&lt;/a&gt;一、没有 push&lt;/h1&gt;&lt;p&gt;这种情况发生在你的本地代码仓库，可能你 &lt;code&gt;add&lt;/code&gt;，&lt;code&gt;commit&lt;/code&gt; 以后发现代码有点问题，准备取消提交，用到下面命令回退到某个版本：&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;git reset [--soft | --mixed | --hard]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
@@ -272,7 +271,7 @@
     <link href="http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/"/>
     <id>http://ehlxr.me/2016/11/02/测试使用-daocloud-持续构建-Hexo/</id>
     <published>2016-11-02T11:03:06.000Z</published>
-    <updated>2016-11-18T01:26:48.104Z</updated>
+    <updated>2016-12-07T05:25:19.614Z</updated>
     
     <content type="html"><![CDATA[<h1 id="测试使用-daocloud-持续构建-Hexo"><a href="#测试使用-daocloud-持续构建-Hexo" class="headerlink" title="测试使用 daocloud 持续构建 Hexo"></a>测试使用 daocloud 持续构建 Hexo</h1><div class="note danger"><p>Coding Hexo DaoCloud </p>
 </div>

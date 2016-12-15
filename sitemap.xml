@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/</loc>
+    
+    <lastmod>2016-12-14T09:50:43.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/</loc>
+    
+    <lastmod>2016-12-07T05:25:19.614Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</loc>
+    
+    <lastmod>2016-12-06T13:24:21.699Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://ehlxr.me/2016/12/02/Vim-Tab-%E8%AE%BE%E7%BD%AE%E4%B8%BA-4-%E4%B8%AA%E7%A9%BA%E6%A0%BC/</loc>
     
     <lastmod>2016-12-02T12:59:12.748Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>http://ehlxr.me/404.html</loc>
     
     <lastmod>2016-12-02T02:01:17.181Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</loc>
-    
-    <lastmod>2016-11-30T13:18:00.562Z</lastmod>
     
   </url>
   
@@ -58,20 +72,6 @@
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/</loc>
-    
-    <lastmod>2016-11-18T01:26:48.104Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/</loc>
-    
-    <lastmod>2016-11-16T09:40:39.422Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95-Travis-CI-%E7%BB%93%E5%90%88-Hexo-%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2016-11-03T12:35:22.612Z</lastmod>
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
+    <loc>http://ehlxr.me/2016/10/19/%E8%BD%AC-%E7%94%A8-Markdown-%E5%86%99%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%EF%BC%88Evernote%EF%BC%89/</loc>
     
     <lastmod>2016-11-01T09:31:10.237Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/10/19/%E8%BD%AC-%E7%94%A8-Markdown-%E5%86%99%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%EF%BC%88Evernote%EF%BC%89/</loc>
+    <loc>http://ehlxr.me/2016/09/28/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%89%80%E4%BA%91/</loc>
     
     <lastmod>2016-11-01T09:31:10.237Z</lastmod>
     
@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/07/21/%E8%BD%AC-JMS%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
+    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
     
     <lastmod>2016-11-01T09:31:10.232Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
+    <loc>http://ehlxr.me/2016/07/21/%E8%BD%AC-JMS%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
     
     <lastmod>2016-11-01T09:31:10.232Z</lastmod>
     
@@ -149,14 +149,14 @@
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/07/19/%E5%BC%80%E5%A7%8Bblog%EF%BC%8C%E5%93%88%E5%93%88/</loc>
+    <loc>http://ehlxr.me/2016/10/31/%E7%83%AD%E7%88%B1%E5%BE%AE%E5%B0%8F%E7%9A%84%E6%94%B9%E5%8F%98/</loc>
     
     <lastmod>2016-11-01T09:31:10.230Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/10/31/%E7%83%AD%E7%88%B1%E5%BE%AE%E5%B0%8F%E7%9A%84%E6%94%B9%E5%8F%98/</loc>
+    <loc>http://ehlxr.me/2016/07/19/%E5%BC%80%E5%A7%8Bblog%EF%BC%8C%E5%93%88%E5%93%88/</loc>
     
     <lastmod>2016-11-01T09:31:10.230Z</lastmod>
     
@@ -219,14 +219,14 @@
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/07/28/GitHub-%E6%9B%B4%E6%96%B0%E5%B7%B2%E7%BB%8F-fork-%E7%9A%84%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>http://ehlxr.me/2016/07/20/Java-List%E4%B8%8E%E6%95%B0%E7%BB%84%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
     
     <lastmod>2016-11-01T09:31:10.212Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://ehlxr.me/2016/07/20/Java-List%E4%B8%8E%E6%95%B0%E7%BB%84%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/</loc>
+    <loc>http://ehlxr.me/2016/07/28/GitHub-%E6%9B%B4%E6%96%B0%E5%B7%B2%E7%BB%8F-fork-%E7%9A%84%E9%A1%B9%E7%9B%AE/</loc>
     
     <lastmod>2016-11-01T09:31:10.212Z</lastmod>
     
