@@ -4,6 +4,20 @@
   
     
     <entry>
+      <title><![CDATA[CentOS 安装 Nginx]]></title>
+      <url>http://ehlxr.me/2016/12/23/CentOS-%E5%AE%89%E8%A3%85-Nginx/</url>
+      <content type="text"><![CDATA[一、安装准备首先由于 Nginx 的一些模块依赖一些 lib 库，所以在安装 Nginx 之前，必须先安装这些 lib 库，这些依赖库主要有 g++、gcc、openssl-devel、pcre-devel 和 zlib-devel，执行如下命令安装： 1234$ yum install gcc-c++$ yum install pcre pcre-devel$ yum install zlib zlib-devel$ yum install openssl openssl--devel 二、安装 Nginx安装之前，最好检查一下是否已经安装有 Nginx 1$ find -name nginx 如果系统已经安装了 Nginx，那么就先卸载 1$ yum remove nginx 首先进入 /usr/local 目录 1$ cd /usr/local 从官网下载最新版的 Nginx 123$ wget http://nginx.org/download/nginx-1.9.6.tar.gz$ tar -zxvf nginx-1.9.6.tar.gz$ cd nginx-1.9.6 接下来安装，使用 --prefix 参数指定 Nginx 安装的目录 123$ ./configure # 默认安装在 /usr/local/nginx$ make$ make install 如果没有报错，顺利完成后，最好看一下 nginx 的安装目录 1$ whereis nginx 安装完毕后，进入安装后目录（/usr/local/nginx）便可以启动或停止它了。 二、基本操作命令2.1 启动命令1/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf 2.2 重启命令1/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf -s reload 2.3 停止命令1/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf -s stop -c 制定配置文件的路径，如果不加 Nginx 会自动加载默认路径的配置文件。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[CentOS 安装 rar、zip 解压缩]]></title>
+      <url>http://ehlxr.me/2016/12/22/CentOS-%E5%AE%89%E8%A3%85-rar%E3%80%81zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9/</url>
+      <content type="text"><![CDATA[Windows 系统压缩的 rar 和 zip 文件，在 Linux 系统下是无法通过 tar 命令解压缩的，需要使用 rar 和 zip 命令来解压缩。下面记录一下 rar 和 zip 安装和简单的使用。 一、rar 安装使用Linux 系统下使用 rarlinux 解压缩 rar 压缩文件，下载页面：http://www.rarsoft.com/download.htm。 1.1 下载系统对应的版本1$ wget http://www.rarsoft.com/rar/rarlinux-x64-5.4.0.tar.gz 1.2 解压、安装123$ tar -zxvf rarlinux-x64-5.4.0.tar.gz$ cd rar$ make 看见下面这些信息就是安装成功了： 12345mkdir -p /usr/local/binmkdir -p /usr/local/libcp rar unrar /usr/local/bincp rarfiles.lst /etccp default.sfx /usr/local/lib 1.3 常用 rar 命令12$ rar x centos.rar # 解压 centos.rar 到当前目录$ rar centos.rar ./piaoyi.org/ # 将 piaoyi.org 目录打包为 centos.rar 1.4 常见错误原因分析1.4.1 如果在运行命令 rar 时,出现下面这个问题1rar: /lib/i686/nosegneg/libc.so.6: version 'GLIBC_2.7' not found (required by rar) 解决办法： 1$ cp rar_static /usr/local/bin/rar 1.4.2 使用 rar 的时候出现错误1bash: /usr/local/bin/rar: /lib/ld-linux.so.2: bad ELF interpreter: No such file or directory 因为 64 位系统中安装了 32 位程序，解决方法： 1$ yum install glibc.i686 1.4.3 重新安装 glibc.i686 以后还有如下类似错误1error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory 再继续安装包： 1$ yum install libstdc++.so.6 二、zip/unzip 安装使用2.1 检查是否有包含 zip（unzip） 的软件包12345678910111213$ yum provides zipLoaded plugins: fastestmirrorLoading mirror speeds from cached hostfile * base: mirrors.cqu.edu.cn * extras: mirrors.cqu.edu.cn * updates: mirrors.tuna.tsinghua.edu.cnzip-3.0-11.el7.x86_64 : A file compression and packaging utility compatible with PKZIPRepo : basezip-3.0-11.el7.x86_64 : A file compression and packaging utility compatible with PKZIPRepo : @base 2.2 安转 zip、unzip12$ yum install zip$ yum install unzip 2.3 常用命令12345678910111213$ zip -r myfile.zip ./*# 将当前目录下的所有文件和文件夹全部压缩成 myfile.zip 文件，-r 表示递归压缩子目录下所有文件.$ unzip -o -d /home/sunny myfile.zip# 把 myfile.zip 文件解压到 /home/sunny/# -o ：不提示的情况下覆盖文件# -d：将文件解压缩到指定目录下$ zip -d myfile.zip smart.txt# 删除压缩文件中 smart.txt 文件$ zip -m myfile.zip ./rpm_info.txt# 向压缩文件中 myfile.zip 中添加 rpm_info.txt 文件]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Vim Tab 设置为 4 个空格]]></title>
       <url>http://ehlxr.me/2016/12/02/Vim-Tab-%E8%AE%BE%E7%BD%AE%E4%B8%BA-4-%E4%B8%AA%E7%A9%BA%E6%A0%BC/</url>
       <content type="text"><![CDATA[在 vim 的配置文件中（Liunx：/etc/vimrc）中添加以下代码后，重启 vim 即可实现按 TAB 产生 4 个空格： 12set ts=4 # 注：ts 是 tabstop 的缩写，设 TAB 宽 4 个空格set expandtab 对于已保存的文件，可以使用下面的方法进行空格和 TAB 的替换： TAB 替换为空格： 123:set ts=4:set expandtab:%retab! 空格替换为 TAB： 123:set ts=4:set noexpandtab:%retab! 加 ! 是用于处理非空白字符之后的 TAB，即所有的 TAB，若不加 !，则只处理行首的 TAB。]]></content>
