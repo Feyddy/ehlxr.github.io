@@ -312,7 +312,7 @@
     <link href="http://ehlxr.me/2016/11/03/Docker-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://ehlxr.me/2016/11/03/Docker-学习笔记/</id>
     <published>2016-11-03T07:46:19.000Z</published>
-    <updated>2016-12-29T09:32:20.081Z</updated>
+    <updated>2016-12-29T09:38:43.556Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oapjp6spr.bkt.clouddn.com/20161103001.png" alt="Docker"></p>
 <h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="1-1-Ubuntu-系统"><a href="#1-1-Ubuntu-系统" class="headerlink" title="1.1 Ubuntu 系统"></a>1.1 Ubuntu 系统</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install docker.io</div></pre></td></tr></table></figure>
@@ -365,14 +365,14 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker tag docker.io/registry:latest 192.168.237.128:5000/registry:2.5.0</div></pre></td></tr></table></figure>
 <p>push 到私有仓库</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker push 192.168.237.128:5000/registry:2.5.0</div></pre></td></tr></table></figure>
-<p>如果出现以下错误信息</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ docker push 192.168.237.128:5000/registry:2.5.0</div><div class="line">The push refers to a repository [192.168.237.128:5000/registry]</div><div class="line">unable to ping registry endpoint https://192.168.237.128:5000/v0/</div><div class="line">v2 ping attempt failed with error: Get https://192.168.237.128:5000/v2/: http: server gave HTTP response to HTTPS client</div><div class="line"> v1 ping attempt failed with error: Get https://192.168.237.128:5000/v1/_ping: http: server gave HTTP response to HTTPS client</div></pre></td></tr></table></figure>
-<p>修改文件 <code>/etc/sysconfig/docker</code> 添加以下代码，然后重启 docker 服务即可。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ADD_REGISTRY=<span class="string">'--add-registry 192.168.237.128:5000'</span></div><div class="line"></div><div class="line">INSECURE_REGISTRY=<span class="string">'--insecure-registry 192.168.237.128:5000'</span></div></pre></td></tr></table></figure>
 <p>通过以下命令删除镜像 <code>192.168.237.128:5000/registry:2.5.0</code>：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker rmi 192.168.237.128:5000/registry:2.5.0</div></pre></td></tr></table></figure>
 <p>然后通过以下命令即可拉取私有仓库的镜像：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker pull 192.168.237.128:5000/hexo:latest</div></pre></td></tr></table></figure>
+<p>如果 docker push 的时候出现以下错误信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ docker push 192.168.237.128:5000/registry:2.5.0</div><div class="line">The push refers to a repository [192.168.237.128:5000/registry]</div><div class="line">unable to ping registry endpoint https://192.168.237.128:5000/v0/</div><div class="line">v2 ping attempt failed with error: Get https://192.168.237.128:5000/v2/: http: server gave HTTP response to HTTPS client</div><div class="line"> v1 ping attempt failed with error: Get https://192.168.237.128:5000/v1/_ping: http: server gave HTTP response to HTTPS client</div></pre></td></tr></table></figure>
+<p>修改文件 <code>/etc/sysconfig/docker</code> 添加以下代码，然后重启 docker 服务即可重新 push。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ADD_REGISTRY=<span class="string">'--add-registry 192.168.237.128:5000'</span></div><div class="line"></div><div class="line">INSECURE_REGISTRY=<span class="string">'--insecure-registry 192.168.237.128:5000'</span></div></pre></td></tr></table></figure>
 <h1 id="五、Dockerfile"><a href="#五、Dockerfile" class="headerlink" title="五、Dockerfile"></a>五、Dockerfile</h1><h2 id="5-1-什么是Dockerfile？"><a href="#5-1-什么是Dockerfile？" class="headerlink" title="5.1 什么是Dockerfile？"></a>5.1 什么是Dockerfile？</h2><blockquote>
 <p>Dockerfile 是自动构建 docker 镜像的配置文件，Dockerfile 中的命令非常类似 linux shell 下的命令<br>Dockerfile，可以让用户自定义构建 docker 镜像，支持以 # 开头的注释行</p>
 </blockquote>
