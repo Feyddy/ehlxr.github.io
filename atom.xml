@@ -69,7 +69,7 @@
     <link href="http://ehlxr.me/2016/12/22/CentOS-%E5%AE%89%E8%A3%85-rar%E3%80%81zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
     <id>http://ehlxr.me/2016/12/22/CentOS-安装-rar、zip-解压缩/</id>
     <published>2016-12-22T07:39:45.000Z</published>
-    <updated>2016-12-22T07:58:32.738Z</updated>
+    <updated>2016-12-26T06:31:45.047Z</updated>
     
     <content type="html"><![CDATA[<p>Windows 系统压缩的 rar 和 zip 文件，在 Linux 系统下是无法通过 tar 命令解压缩的，需要使用 rar 和 zip 命令来解压缩。下面记录一下 rar 和 zip 安装和简单的使用。</p>
 <h1 id="一、rar-安装使用"><a href="#一、rar-安装使用" class="headerlink" title="一、rar 安装使用"></a>一、rar 安装使用</h1><p>Linux 系统下使用 rarlinux 解压缩 rar 压缩文件，下载页面：<a href="http://www.rarsoft.com/download.htm。" target="_blank" rel="external">http://www.rarsoft.com/download.htm。</a></p>
@@ -89,7 +89,7 @@
 <p>再继续安装包：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yum install libstdc++.so.6</div></pre></td></tr></table></figure>
 <h1 id="二、zip-unzip-安装使用"><a href="#二、zip-unzip-安装使用" class="headerlink" title="二、zip/unzip 安装使用"></a>二、zip/unzip 安装使用</h1><h2 id="2-1-检查是否有包含-zip（unzip）-的软件包"><a href="#2-1-检查是否有包含-zip（unzip）-的软件包" class="headerlink" title="2.1 检查是否有包含 zip（unzip） 的软件包"></a>2.1 检查是否有包含 zip（unzip） 的软件包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ yum provides zip</div><div class="line">Loaded plugins: fastestmirror</div><div class="line">Loading mirror speeds from cached hostfile</div><div class="line"> * base: mirrors.cqu.edu.cn</div><div class="line"> * extras: mirrors.cqu.edu.cn</div><div class="line"> * updates: mirrors.tuna.tsinghua.edu.cn</div><div class="line">zip-3.0-11.el7.x86_64 : A file compression and packaging utility compatible with PKZIP</div><div class="line">Repo        : base</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">zip-3.0-11.el7.x86_64 : A file compression and packaging utility compatible with PKZIP</div><div class="line">Repo        : @base</div></pre></td></tr></table></figure>
-<h2 id="2-2-安转-zip、unzip"><a href="#2-2-安转-zip、unzip" class="headerlink" title="2.2 安转 zip、unzip"></a>2.2 安转 zip、unzip</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ yum install zip</div><div class="line">$ yum install unzip</div></pre></td></tr></table></figure>
+<h2 id="2-2-安装-zip、unzip"><a href="#2-2-安装-zip、unzip" class="headerlink" title="2.2 安装 zip、unzip"></a>2.2 安装 zip、unzip</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ yum install zip</div><div class="line">$ yum install unzip</div></pre></td></tr></table></figure>
 <h2 id="2-3-常用命令"><a href="#2-3-常用命令" class="headerlink" title="2.3 常用命令"></a>2.3 常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ zip -r myfile.zip ./*</div><div class="line"><span class="comment"># 将当前目录下的所有文件和文件夹全部压缩成 myfile.zip 文件，-r 表示递归压缩子目录下所有文件.</span></div><div class="line"></div><div class="line">$ unzip -o <span class="_">-d</span> /home/sunny myfile.zip</div><div class="line"><span class="comment"># 把 myfile.zip 文件解压到 /home/sunny/</span></div><div class="line"><span class="comment"># -o ：不提示的情况下覆盖文件</span></div><div class="line"><span class="comment"># -d：将文件解压缩到指定目录下</span></div><div class="line"></div><div class="line">$ zip <span class="_">-d</span> myfile.zip smart.txt</div><div class="line"><span class="comment"># 删除压缩文件中 smart.txt 文件</span></div><div class="line"></div><div class="line">$ zip -m myfile.zip ./rpm_info.txt</div><div class="line"><span class="comment"># 向压缩文件中 myfile.zip 中添加 rpm_info.txt 文件</span></div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
@@ -312,7 +312,7 @@
     <link href="http://ehlxr.me/2016/11/03/Docker-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://ehlxr.me/2016/11/03/Docker-学习笔记/</id>
     <published>2016-11-03T07:46:19.000Z</published>
-    <updated>2016-11-03T12:34:14.353Z</updated>
+    <updated>2016-12-29T09:07:04.783Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oapjp6spr.bkt.clouddn.com/20161103001.png" alt="Docker"></p>
 <h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="1-1-Ubuntu-系统"><a href="#1-1-Ubuntu-系统" class="headerlink" title="1.1 Ubuntu 系统"></a>1.1 Ubuntu 系统</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install docker.io</div></pre></td></tr></table></figure>
@@ -328,16 +328,24 @@
 <li>想要删除 untagged images（也就是那些 id 为 <none> 的容器）：<code>docker rmi $(docker images | grep &quot;^&lt;none&gt;&quot; | awk &quot;{print $3}&quot;)</code></none></li>
 <li>删除全部容器：<code>docker rmi $(docker images -q)</code></li>
 </ul>
-<h2 id="3-2-创建容器"><a href="#3-2-创建容器" class="headerlink" title="3.2 创建容器"></a>3.2 创建容器</h2><p>创建一个容器，例如：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --name blog --privileged=true -v /home/ehlxr/Hexo/public:/usr/share/nginx/<span class="selector-tag">html</span>:ro -d -<span class="selector-tag">p</span> <span class="number">80</span>:<span class="number">80</span> docker.io/nginx</div></pre></td></tr></table></figure>
+<h2 id="3-2-创建容器"><a href="#3-2-创建容器" class="headerlink" title="3.2 创建容器"></a>3.2 创建容器</h2><p>创建一个容器并运行，例如：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --name blog --privileged=true -v /home/Hexo/public:/usr/share/nginx/<span class="selector-tag">html</span>:ro -d -<span class="selector-tag">p</span> <span class="number">80</span>:<span class="number">80</span> docker.io/nginx</div></pre></td></tr></table></figure>
 <ul>
 <li><code>--name</code>：容器名称</li>
 <li><code>--privileged=true</code>：设置权限</li>
-<li><code>-v</code>：挂载本地磁盘目录，格式为本地磁盘绝对路径:容器路径</li>
+<li><code>-v</code>：挂载本地磁盘目录，格式为本地磁盘绝对路径:容器路径<blockquote>
+<p>保证删除容器后，数据不被删除</p>
+</blockquote>
+</li>
 <li><code>:ro</code>：只读</li>
 <li><code>-d</code>：后台模式</li>
-<li><code>-p</code>：设置 EXPOSE 端口</li>
+<li>it 前台交互式运行</li>
+<li><code>-p</code>：设置宿主计算机和容器端口映射</li>
 </ul>
+<blockquote>
+<p>在Dockerfile 中有一条指令是 EXPOSE 22，如果使用 <code>-P</code>，宿主机会随机选择一个 <code>没有被使用的端口</code> 和 docker <code>容器的 22 端口</code> 做 <code>端口映射</code>，如果 docker 主机或者容器重启后，宿主机又会随机选择一个没有被使用的端口和 docker 容器的 22 端口做端口映射，这样端口会发生 <code>变化</code></p>
+<p>如果使用 <code>-p</code>，比如 <code>2222:22</code>，这样不管是 docker 主机或者容器重启后，2222:22 端口都是这样来映射，<code>不会发生改变</code></p>
+</blockquote>
 <h2 id="3-3-容器操作"><a href="#3-3-容器操作" class="headerlink" title="3.3 容器操作"></a>3.3 容器操作</h2><ul>
 <li>启动：<code>docker start blog</code></li>
 <li>停止：<code>docker stop blog</code>；停止所有容器：<code>docker stop $(docker ps -a -q)</code></li>
@@ -345,6 +353,88 @@
 <li>查看：<code>docker ps -a</code>（查看所有容器，包括已启动的和未启动的）</li>
 </ul>
 <h2 id="3-3-进入容器"><a href="#3-3-进入容器" class="headerlink" title="3.3 进入容器"></a>3.3 进入容器</h2><figure class="highlight mel"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo docker <span class="keyword">exec</span> -it blog /bin/bash</div></pre></td></tr></table></figure>
+<h1 id="四、Docker-私有仓库"><a href="#四、Docker-私有仓库" class="headerlink" title="四、Docker 私有仓库"></a>四、Docker 私有仓库</h1><p>Docker 提供了一个中央仓库，同时也允许我们使用 registry 搭建本地私有仓库。</p>
+<h2 id="4-1-搭建-Docker-私有仓库"><a href="#4-1-搭建-Docker-私有仓库" class="headerlink" title="4.1 搭建 Docker 私有仓库"></a>4.1 搭建 Docker 私有仓库</h2><p>首先拉取 registry 镜像</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull registry</div></pre></td></tr></table></figure>
+<p>创建 register 容器并运行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --name registry <span class="_">-d</span> -p 5000:5000 --privileged=<span class="literal">true</span> -v /opt/registry:/var/lib/registry/ registry</div></pre></td></tr></table></figure>
+<p>挂载容器中存放镜像的目录到本地 <code>/opt/registry</code>，需要注意的一点是，容器中存放镜像的目录 registry 官方镜像示例中使用的是 <code>/tmp/registry-dev</code> ，但实验证明在版本 <code>2.5.0</code> 中，目录是 <code>/var/lib/registry/</code>。</p>
+<p>CentOS 系统挂载目录需要加上 <code>--privileged=true</code> 解决挂载的目录没有权限的问题。</p>
+<p>打开浏览器输入 register 容器宿主计算机地址加端口（如：<a href="http://192.168.237.128:5000/v2/" target="_blank" rel="external">http://192.168.237.128:5000/v2/</a> ），如果出现 <code>{}</code>，即表明 register 容器运行成功。</p>
+<h2 id="4-2-测试使用私有仓库"><a href="#4-2-测试使用私有仓库" class="headerlink" title="4.2 测试使用私有仓库"></a>4.2 测试使用私有仓库</h2><p>首先给需要 push 到仓库的 images 打 TAG，前面需要带上私有仓库的地址。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker tag docker.io/registry:latest 192.168.237.128:5000/registry:2.5.0</div></pre></td></tr></table></figure>
+<p>push 到私有仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ docker push 192.168.237.128:5000/registry:2.5.0</div></pre></td></tr></table></figure>
+<p>如果出现以下错误信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ docker push 192.168.237.128:5000/registry:2.5.0</div><div class="line">The push refers to a repository [192.168.237.128:5000/registry]</div><div class="line">unable to ping registry endpoint https://192.168.237.128:5000/v0/</div><div class="line">v2 ping attempt failed with error: Get https://192.168.237.128:5000/v2/: http: server gave HTTP response to HTTPS client</div><div class="line"> v1 ping attempt failed with error: Get https://192.168.237.128:5000/v1/_ping: http: server gave HTTP response to HTTPS client</div></pre></td></tr></table></figure>
+<p>修改文件 <code>/etc/sysconfig/docker</code> 添加以下代码，然后重启 docker 服务即可。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ADD_REGISTRY=<span class="string">'--add-registry 192.168.237.128:5000'</span></div><div class="line"></div><div class="line">INSECURE_REGISTRY=<span class="string">'--insecure-registry 192.168.237.128:5000'</span></div></pre></td></tr></table></figure>
+<h1 id="五、Dockerfile"><a href="#五、Dockerfile" class="headerlink" title="五、Dockerfile"></a>五、Dockerfile</h1><h2 id="5-1-什么是Dockerfile？"><a href="#5-1-什么是Dockerfile？" class="headerlink" title="5.1 什么是Dockerfile？"></a>5.1 什么是Dockerfile？</h2><blockquote>
+<p>Dockerfile 是自动构建 docker 镜像的配置文件，Dockerfile 中的命令非常类似 linux shell 下的命令<br>Dockerfile，可以让用户自定义构建 docker 镜像，支持以 # 开头的注释行</p>
+</blockquote>
+<p>一般，Dockerfile分为4部分</p>
+<ul>
+<li>基础镜像（父镜像）信息</li>
+<li>维护者信息</li>
+<li>镜像操作命令</li>
+<li>容器启动命令</li>
+</ul>
+<h2 id="5-2-Dockerfile-介绍"><a href="#5-2-Dockerfile-介绍" class="headerlink" title="5.2 Dockerfile 介绍"></a>5.2 Dockerfile 介绍</h2><p><code>FROM       centos:centos7.1.1503</code></p>
+<blockquote>
+<p>基于 <strong>父镜像</strong> 构建其他 docker 镜像，<em>父镜像</em>：可以通过 docker pull 命令获得，也可以自己制作</p>
+</blockquote>
+<p><code>MAINTAINER Carson,C.J.Zeong &lt;zcy@nicescale.com&gt;</code></p>
+<blockquote>
+<p>Dockerfile 维护者</p>
+</blockquote>
+<p><code>ENV TZ &quot;Asia/Shanghai&quot;</code></p>
+<blockquote>
+<p>ENV（environment）设置环境变量，一个 Dockerfile 中可以写多个。以上例子是：设置 docker 容器的时区为 Shanghai</p>
+</blockquote>
+<p><strong>Dockerfile 中有 2 条指令可以拷贝文件</strong></p>
+<p><code>ADD aliyun-mirror.repo /etc/yum.repos.d/CentOS-Base.repo</code></p>
+<blockquote>
+<p>拷贝本地文件到 docker 容器里，还可以拷贝 URL 链接地址下的文件，ADD 还具有解压软件包的功能（支持 gzip, bzip2 or xz）</p>
+</blockquote>
+<p><code>COPY test /mydir</code></p>
+<blockquote>
+<p>拷贝本地文件到 docker 容器</p>
+</blockquote>
+<p><code>RUN yum install -y curl wget....</code></p>
+<blockquote>
+<p>RUN 命令，非常类似 Linux 下的 shell 命令 <code>(the command is run in a shell - /bin/sh -c - shell form)</code><br>在 Dockerfile 中每执行一条指令（ENV、ADD、RUN等命令），都会生成一个 docker image layer</p>
+</blockquote>
+<p><code>ADD supervisord.conf /etc/supervisord.conf</code></p>
+<blockquote>
+<p>添加 supervisor 的主配置文件，到 docker 容器里</p>
+</blockquote>
+<p><code>EXPOSE 22</code></p>
+<blockquote>
+<p>端口映射 <code>EXPOSE &lt;host_port&gt;:&lt;container_port&gt;</code><br>推荐使用 <code>docker run -p &lt;host_port&gt;:&lt;container_port&gt;</code> 来固化端口</p>
+</blockquote>
+<p><code>ENTRYPOINT [&quot;/usr/bin/supervisord&quot;, &quot;-n&quot;, &quot;-c&quot;, &quot;/etc/supervisord.conf&quot;]</code></p>
+<blockquote>
+<p>一个 Dockerfile 中只有最后一条 <code>ENTRYPOINT</code> 生效，并且每次启动 docker 容器，都会执行 <code>ENTRYPOINT</code></p>
+</blockquote>
+<p><code>ONBUILD ADD . /app</code></p>
+<blockquote>
+<p><code>ONBUILD</code> 在生成当前docker镜像的时候不生效，在子镜像生效；<code>ONBUILD</code>在产品发布时起着非常重要的作用！举例<br>A镜像中有<code>ONBUILD</code>指令，在构建A镜像时<code>ONBUILD</code>指令不执行；B镜像<code>FROM A</code>,在构建B镜像时<code>ONBUILD</code>指令开始执行；</p>
+</blockquote>
+<p><code>VOLUME [&quot;/var/lib/mysql&quot;]</code></p>
+<blockquote>
+<p>指定 docker 容器和宿主机做映射的文件目录</p>
+</blockquote>
+<h2 id="5-3-生成-docker-镜像"><a href="#5-3-生成-docker-镜像" class="headerlink" title="5.3 生成 docker 镜像"></a>5.3 生成 docker 镜像</h2><p>以上文件就是用来生成第一个 docker 镜像的 Dockerfile，通过 <code>docker build</code> 指令来生成 docker 镜像</p>
+<p><code>docker build -t csphere/centos:7.1 .</code></p>
+<blockquote>
+<p>如果 Dockerfile 在当前目录下，输入点 <code>.</code> 就可以进行加载当前目录下的 <code>Dockerfile</code><br>如果不在当前目录下需要运行 <code>docker build -t csphere/centos:7.1 &lt;Dockerfile_dir&gt;</code> 加载相对路径下的 <code>Dockerfile</code></p>
+</blockquote>
+<p>docker 镜像的命名规则 <code>registry_url/namespace/image_name:tag</code> 默认 <code>tag</code> 是 <code>latest</code></p>
+<blockquote>
+<p>在构建 Docker 镜像时，如果有自己内部的 yum 源，替换成自己内部的 yum 地址，可以加快构建速度。<br>如果第一次构建失败，会有部分镜像 layer 生成，第二次构建会基于第一次构建所生成的 layer（use cache），继续构建</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Step 10 : EXPOSE 22</div><div class="line"> ---&gt; Running <span class="keyword">in</span> 0ed1c5479ebc</div><div class="line"> ---&gt; c57a5bac41c8</div><div class="line">Removing intermediate container 0ed1c5479ebc</div><div class="line">Step 11 : ENTRYPOINT /usr/bin/supervisord -n -c /etc/supervisord.conf</div><div class="line"> ---&gt; Running <span class="keyword">in</span> e16c7ac2fd45</div><div class="line"> ---&gt; 185ef7b101a8</div><div class="line">Removing intermediate container e16c7ac2fd45</div><div class="line">Successfully built 185ef7b101a8</div></pre></td></tr></table></figure>
+<p>可以看到每执行一条 <code>Dockerfile</code> 的指令都会生成一个镜像的 layer <code>c57a5bac41c8</code> <code>185ef7b101a8</code> 最后 <code>185ef7b101a8</code> 这个是 docker 镜像的ID，<code>185ef7b101a8</code> 是由 <code>c57a5bac41c8</code> <code>185ef7b101a8</code>…layers 叠加而成，体现了 docker 镜像是分层的</p>
 <hr>
 <div style="color: #f00;">未完待续…</div>
 
