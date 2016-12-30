@@ -53,9 +53,9 @@
         <title>CentOS 安装 rar、zip 解压缩</title>
         <pubTime>2016-12-22T07:39:45.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>CentOS</tag>
+         
+        <tag>Linux</tag>
          
         <tag>rar</tag>
          
@@ -79,11 +79,11 @@
         <title>CentOS 安装 Nginx</title>
         <pubTime>2016-12-23T03:20:44.000Z</pubTime>
         
-        <tag>Linux</tag>
+        <tag>Nginx</tag>
          
         <tag>CentOS</tag>
          
-        <tag>Nginx</tag>
+        <tag>Linux</tag>
          
          
            
@@ -318,9 +318,9 @@
         <title>[转]将 Centos 的 yum 源更改为国内的阿里云源</title>
         <pubTime>2016-07-30T03:57:59.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>CentOS</tag>
+         
+        <tag>Linux</tag>
          
          
            
@@ -373,26 +373,6 @@
 
     
   <url>
-    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
-    <lastmod>2016-11-01T09:31:10.232Z</lastmod>
-    <data>
-        <display>
-        <title>设置 Sublime Text3 主题透明</title>
-        <pubTime>2016-10-24T09:30:55.000Z</pubTime>
-        
-        <tag>Sublime</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://ehlxr.me/2016/07/21/%E8%BD%AC-JMS%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
     <lastmod>2016-11-01T09:31:10.232Z</lastmod>
     <data>
@@ -408,6 +388,26 @@
            
              
               <breadCrumb title="Java开发技术" url="http://ehlxr.me/categories/Java%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://ehlxr.me/2016/10/24/%E8%AE%BE%E7%BD%AE-Sublime-Text3-%E4%B8%BB%E9%A2%98%E9%80%8F%E6%98%8E/</loc>
+    <lastmod>2016-11-01T09:31:10.232Z</lastmod>
+    <data>
+        <display>
+        <title>设置 Sublime Text3 主题透明</title>
+        <pubTime>2016-10-24T09:30:55.000Z</pubTime>
+        
+        <tag>Sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -435,14 +435,14 @@
 
     
   <url>
-    <loc>http://ehlxr.me/2016/10/31/%E7%83%AD%E7%88%B1%E5%BE%AE%E5%B0%8F%E7%9A%84%E6%94%B9%E5%8F%98/</loc>
+    <loc>http://ehlxr.me/2016/07/19/%E5%BC%80%E5%A7%8Bblog%EF%BC%8C%E5%93%88%E5%93%88/</loc>
     <lastmod>2016-11-01T09:31:10.230Z</lastmod>
     <data>
         <display>
-        <title>热爱微小的改变</title>
-        <pubTime>2016-10-31T09:05:37.000Z</pubTime>
+        <title>开始blog，哈哈</title>
+        <pubTime>2016-07-19T09:16:17.000Z</pubTime>
         
-        <tag>杂谈</tag>
+        <tag>hello</tag>
          
          
            
@@ -455,14 +455,14 @@
 
     
   <url>
-    <loc>http://ehlxr.me/2016/07/19/%E5%BC%80%E5%A7%8Bblog%EF%BC%8C%E5%93%88%E5%93%88/</loc>
+    <loc>http://ehlxr.me/2016/10/31/%E7%83%AD%E7%88%B1%E5%BE%AE%E5%B0%8F%E7%9A%84%E6%94%B9%E5%8F%98/</loc>
     <lastmod>2016-11-01T09:31:10.230Z</lastmod>
     <data>
         <display>
-        <title>开始blog，哈哈</title>
-        <pubTime>2016-07-19T09:16:17.000Z</pubTime>
+        <title>热爱微小的改变</title>
+        <pubTime>2016-10-31T09:05:37.000Z</pubTime>
         
-        <tag>hello</tag>
+        <tag>杂谈</tag>
          
          
            
@@ -563,26 +563,6 @@
 
     
   <url>
-    <loc>http://ehlxr.me/2016/07/25/Sublime-Text-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2016-11-01T09:31:10.215Z</lastmod>
-    <data>
-        <display>
-        <title>Sublime Text 插件安装</title>
-        <pubTime>2016-07-25T13:06:57.000Z</pubTime>
-        
-        <tag>Sublime</tag>
-         
-         
-           
-             
-              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://ehlxr.me/2016/07/28/Oracle-%E4%B8%8E-MySQL-%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2016-11-01T09:31:10.215Z</lastmod>
     <data>
@@ -598,6 +578,26 @@
            
              
               <breadCrumb title="SQL" url="http://ehlxr.me/categories/SQL/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://ehlxr.me/2016/07/25/Sublime-Text-%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2016-11-01T09:31:10.215Z</lastmod>
+    <data>
+        <display>
+        <title>Sublime Text 插件安装</title>
+        <pubTime>2016-07-25T13:06:57.000Z</pubTime>
+        
+        <tag>Sublime</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
           
         </display>
     </data>
@@ -720,9 +720,9 @@
         <title>CentOS 系统下 GitLab 搭建与基本配置</title>
         <pubTime>2016-07-31T10:15:47.000Z</pubTime>
         
-        <tag>CentOS</tag>
-         
         <tag>Git</tag>
+         
+        <tag>CentOS</tag>
          
         <tag>GitLab</tag>
          
@@ -744,11 +744,11 @@
         <title>CentOS 7 安装最新的 Git</title>
         <pubTime>2016-07-30T14:12:43.000Z</pubTime>
         
-        <tag>Linux</tag>
+        <tag>Git</tag>
          
         <tag>CentOS</tag>
          
-        <tag>Git</tag>
+        <tag>Linux</tag>
          
          
            
@@ -768,11 +768,11 @@
         <title>CentOS 7 安装 Node.js</title>
         <pubTime>2016-07-30T08:19:03.000Z</pubTime>
         
+        <tag>CentOS</tag>
+         
         <tag>Linux</tag>
          
         <tag>Node.js</tag>
-         
-        <tag>CentOS</tag>
          
          
            
@@ -836,9 +836,9 @@
         <title>CentOS 中配置 Git 命令自动补全</title>
         <pubTime>2016-09-04T02:03:35.000Z</pubTime>
         
-        <tag>CentOS</tag>
-         
         <tag>Git</tag>
+         
+        <tag>CentOS</tag>
          
          
            
