@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ehlxr.me/"/>
-  <updated>2016-12-30T07:48:33.931Z</updated>
+  <updated>2016-12-31T06:16:20.063Z</updated>
   <id>http://ehlxr.me/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Good bye 2016...</title>
+    <link href="http://ehlxr.me/2016/12/31/Good-bye-2016/"/>
+    <id>http://ehlxr.me/2016/12/31/Good-bye-2016/</id>
+    <published>2016-12-31T04:51:14.000Z</published>
+    <updated>2016-12-31T06:16:20.063Z</updated>
+    
+    <content type="html"><![CDATA[<p>时光飞逝，转眼间，2016 年已经在今天画上句号，结束了，再提起 2016 年就已经是过往了…</p>
+<p>印象中，十年应该要算是很长的一段时间吧，但仔细一琢磨十年前也就才 2006 年…那时候是高中，每天除了上课就是写作业，学习很枯燥总感觉时间很多，憧憬着美好的未来，过着也算是无忧无虑生活。每天放学，下晚自习，总是很快的骑着自行车冲出校门口，因为晚了学生会很多，那时候骑自行车一个比一个快。周五不用上晚自习，三五成群去网吧通宵，包宿八块钱八个小时，从晚上十点到第二天早上六点，六点从网吧出来总会有种恍如隔世的感觉，大街上几乎没有人，回出租屋睡上一天，感觉就是一周最美好的时光了！看着别的同学拿着小灵通、MP3 ，很羡慕，自已也想要有一个，都不敢奢望能有一台电脑…一切仿佛也就是昨天而已，但是已经十年之前了，不禁一颤，人生能有几个十年…</p>
+<a id="more"></a>
+<p>总结 2016，收获，知足，感恩…眼前的要珍惜，来之不易的拥有更要珍惜。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="86" src="//music.163.com/outchain/player?type=2&id=35307971&auto=1&height=66"></iframe>
+
+<hr>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;时光飞逝，转眼间，2016 年已经在今天画上句号，结束了，再提起 2016 年就已经是过往了…&lt;/p&gt;
+&lt;p&gt;印象中，十年应该要算是很长的一段时间吧，但仔细一琢磨十年前也就才 2006 年…那时候是高中，每天除了上课就是写作业，学习很枯燥总感觉时间很多，憧憬着美好的未来，过着也算是无忧无虑生活。每天放学，下晚自习，总是很快的骑着自行车冲出校门口，因为晚了学生会很多，那时候骑自行车一个比一个快。周五不用上晚自习，三五成群去网吧通宵，包宿八块钱八个小时，从晚上十点到第二天早上六点，六点从网吧出来总会有种恍如隔世的感觉，大街上几乎没有人，回出租屋睡上一天，感觉就是一周最美好的时光了！看着别的同学拿着小灵通、MP3 ，很羡慕，自已也想要有一个，都不敢奢望能有一台电脑…一切仿佛也就是昨天而已，但是已经十年之前了，不禁一颤，人生能有几个十年…&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="杂谈" scheme="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+      <category term="杂谈" scheme="http://ehlxr.me/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>[转]Linux shell 中单引号、双引号、反引号、反斜杠的区别</title>
@@ -1139,63 +1169,6 @@
       <category term="Zsh" scheme="http://ehlxr.me/tags/Zsh/"/>
     
       <category term="Shell" scheme="http://ehlxr.me/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>5 分钟搭建 Git 服务器-Gogs</title>
-    <link href="http://ehlxr.me/2016/09/06/5-%E5%88%86%E9%92%9F%E6%90%AD%E5%BB%BA-Git-%E6%9C%8D%E5%8A%A1%E5%99%A8-Gogs/"/>
-    <id>http://ehlxr.me/2016/09/06/5-分钟搭建-Git-服务器-Gogs/</id>
-    <published>2016-09-06T04:15:14.000Z</published>
-    <updated>2016-11-01T09:31:10.203Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>Gogs 基于 Go 语言的自助 Git 服务。它具有易安装、跨平台、轻量级、开源化等特性…</p>
-</blockquote>
-<!-- ![][1] -->
-<img src="http://oapjp6spr.bkt.clouddn.com/gogs-logo.png" width="150">
-<p>最近新到一家公司，发现在使用 Gogs 搭建 Git 服务，遂研究了一下，和前段时间研究的 GitLab 做了一个简单的对比，虽然 Gogs 相对与 GitLab 还比较年轻，也许没有 GitLab 强大和稳健，但 Gogs 更加简单易用，而且能够满足正常的工作使用。</p>
-<p>Gogs 是轻量级的 Git 服务，正如官方介绍的：一个廉价的树莓派的配置足以满足 Gogs 的最低系统硬件要求。最大程度上节省您的服务器资源！关键的一点是免费开源的，所有的代码都开源在 GitHub 上。下面结合官方的介绍，总结一下在 Linux 系统下的安装方法，真的是相当的简单，5 分钟足矣！</p>
-<a id="more"></a>
-<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="1-1-下载"><a href="#1-1-下载" class="headerlink" title="1.1 下载"></a>1.1 下载</h2><p>下载对应系统版本的二进制安装包，并上传至 Linux 系统，或通过以下命令下载：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget https://github.com/gogits/gogs/releases/download/v0.9.97/linux_amd64.tar.gz</div></pre></td></tr></table></figure>
-<p><em><a href="https://github.com/gogits/gogs/releases" target="_blank" rel="external">Gogs发布版本</a></em></p>
-<h2 id="1-2-解压安装包"><a href="#1-2-解压安装包" class="headerlink" title="1.2 解压安装包"></a>1.2 解压安装包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ tar -xzvf gogs_v0.9.97_linux_amd64.tar.gz</div></pre></td></tr></table></figure>
-<h2 id="1-3-安装"><a href="#1-3-安装" class="headerlink" title="1.3 安装"></a>1.3 安装</h2><p>进入到刚刚解压后的目录执行命令 <code>./gogs web</code>，出现以下信息：</p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/20160906134643.jpg" alt=""></p>
-<h2 id="1-4-配置"><a href="#1-4-配置" class="headerlink" title="1.4 配置"></a>1.4 配置</h2><p>打开浏览器输地址入：<code>http://ip:3000</code>，第一次会出现以下的配置界面，根据实际情况选择即可。</p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/Gogs-install.png" alt=""></p>
-<h2 id="1-5-完成安装"><a href="#1-5-完成安装" class="headerlink" title="1.5 完成安装"></a>1.5 完成安装</h2><p>之后进入以下界面，表明安装已经完成。</p>
-<p><img src="http://oapjp6spr.bkt.clouddn.com/20160906135253.jpg" alt=""></p>
-<h2 id="1-6-后台运行"><a href="#1-6-后台运行" class="headerlink" title="1.6 后台运行"></a>1.6 后台运行</h2><p>后台运行可参考以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nohup ./gogs web &gt; nohup.out 2&gt;&amp;1 &amp;</div></pre></td></tr></table></figure>
-<h1 id="升级"><a href="#升级" class="headerlink" title="升级"></a>升级</h1><p>引用自官方<a href="https://gogs.io/docs/upgrade/upgrade_from_binary" target="_blank" rel="external">二级制升级文档</a></p>
-<h2 id="2-1-首先，确认当前安装的位置："><a href="#2-1-首先，确认当前安装的位置：" class="headerlink" title="2.1 首先，确认当前安装的位置："></a>2.1 首先，确认当前安装的位置：</h2> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># 默认位置在 git 用户下的家目录</div><div class="line">$ sudo su - git</div><div class="line">$ cd ~</div><div class="line">$ pwd</div><div class="line">/home/git</div><div class="line">$ ls</div><div class="line">gogs gogs-repositories</div></pre></td></tr></table></figure>
-<h2 id="2-2-然后将当前目录移动到另一个临时的位置，但不是删除！"><a href="#2-2-然后将当前目录移动到另一个临时的位置，但不是删除！" class="headerlink" title="2.2 然后将当前目录移动到另一个临时的位置，但不是删除！"></a>2.2 然后将当前目录移动到另一个临时的位置，但不是删除！</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ mv gogs gogs_old</div></pre></td></tr></table></figure>
-<h2 id="2-3-下载并解压新的二进制："><a href="#2-3-下载并解压新的二进制：" class="headerlink" title="2.3 下载并解压新的二进制："></a>2.3 下载并解压新的二进制：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># 请根据系统和类型获取相应的二进制版本</div><div class="line">$ wget https://dl.gogs.io/gogs_v$VERSION_$OS_$ARCH.tar.gz</div><div class="line">$ tar -zxvf gogs_v$VERSION_$OS_$ARCH.tar.gz</div><div class="line">$ ls</div><div class="line">gogs gogs_old  gogs-repositories gogs_v$VERSION_$OS_$ARCH.tar.gz</div></pre></td></tr></table></figure>
-<h2 id="2-4-复制-custom、data-和-log-目录到新解压的目录中："><a href="#2-4-复制-custom、data-和-log-目录到新解压的目录中：" class="headerlink" title="2.4 复制 custom、data 和 log 目录到新解压的目录中："></a>2.4 复制 <code>custom</code>、<code>data</code> 和 <code>log</code> 目录到新解压的目录中：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cp -R gogs_old/custom gogs</div><div class="line">$ cp -R gogs_old/data gogs</div><div class="line">$ cp -R gogs_old/log gogs</div></pre></td></tr></table></figure>
-<h2 id="2-5-最后，运行并打开浏览器进行测试："><a href="#2-5-最后，运行并打开浏览器进行测试：" class="headerlink" title="2.5 最后，运行并打开浏览器进行测试："></a>2.5 最后，运行并打开浏览器进行测试：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd gogs</div><div class="line">$ ./gogs web</div></pre></td></tr></table></figure>
-<hr>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Gogs 基于 Go 语言的自助 Git 服务。它具有易安装、跨平台、轻量级、开源化等特性…&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;!-- ![][1] --&gt;
-&lt;img src=&quot;http://oapjp6spr.bkt.clouddn.com/gogs-logo.png&quot; width=&quot;150&quot;&gt;
-&lt;p&gt;最近新到一家公司，发现在使用 Gogs 搭建 Git 服务，遂研究了一下，和前段时间研究的 GitLab 做了一个简单的对比，虽然 Gogs 相对与 GitLab 还比较年轻，也许没有 GitLab 强大和稳健，但 Gogs 更加简单易用，而且能够满足正常的工作使用。&lt;/p&gt;
-&lt;p&gt;Gogs 是轻量级的 Git 服务，正如官方介绍的：一个廉价的树莓派的配置足以满足 Gogs 的最低系统硬件要求。最大程度上节省您的服务器资源！关键的一点是免费开源的，所有的代码都开源在 GitHub 上。下面结合官方的介绍，总结一下在 Linux 系统下的安装方法，真的是相当的简单，5 分钟足矣！&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
-    
-    
-      <category term="Gogs" scheme="http://ehlxr.me/tags/Gogs/"/>
-    
-      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
     
   </entry>
   

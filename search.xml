@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[Good bye 2016...]]></title>
+      <url>http://ehlxr.me/2016/12/31/Good-bye-2016/</url>
+      <content type="text"><![CDATA[时光飞逝，转眼间，2016 年已经在今天画上句号，结束了，再提起 2016 年就已经是过往了… 印象中，十年应该要算是很长的一段时间吧，但仔细一琢磨十年前也就才 2006 年…那时候是高中，每天除了上课就是写作业，学习很枯燥总感觉时间很多，憧憬着美好的未来，过着也算是无忧无虑生活。每天放学，下晚自习，总是很快的骑着自行车冲出校门口，因为晚了学生会很多，那时候骑自行车一个比一个快。周五不用上晚自习，三五成群去网吧通宵，包宿八块钱八个小时，从晚上十点到第二天早上六点，六点从网吧出来总会有种恍如隔世的感觉，大街上几乎没有人，回出租屋睡上一天，感觉就是一周最美好的时光了！看着别的同学拿着小灵通、MP3 ，很羡慕，自已也想要有一个，都不敢奢望能有一台电脑…一切仿佛也就是昨天而已，但是已经十年之前了，不禁一颤，人生能有几个十年… 总结 2016，收获，知足，感恩…眼前的要珍惜，来之不易的拥有更要珍惜。]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[[转]Linux shell 中单引号、双引号、反引号、反斜杠的区别]]></title>
       <url>http://ehlxr.me/2016/12/30/%E8%BD%AC-Linux-shell-%E4%B8%AD%E5%8D%95%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8C%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8D%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8D%E6%96%9C%E6%9D%A0%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
       <content type="text"><![CDATA[shell 可以识别 4 种不同类型的引字符号：单引号字符 &#39;，双引号字符 &quot;，反斜杠字符 \，反引号字符 ` ，学习 shell 编程的朋友可以看下。 1. 单引号( &#39; )123$ grep Susan phonebookSusan Goldberg 403-212-4921Susan Topple 212-234-2343 如果我们想查找的是 Susan Goldberg，不能直接使用 grep Susan Goldberg phonebook 命令，grep 会把 Goldberg 和 phonebook 当作需要搜索的文件。 12$ grep &apos;Susan Gold&apos; phonebookSusan Goldberg 403-212-4921 当 shell 碰到第一个单引号时，它忽略掉其后直到右引号的所有特殊字符。 2. 双引号( &quot; )双引号作用与单引号类似，区别在于它没有那么严格。单引号告诉 shell 忽略所有特殊字符，而双引号只要求忽略大多数，具体说，括在双引号中的三种特殊字符不被忽略：$、\、`。即双引号会解释字符串的特别意思，而单引号直接使用字符串。如果使用双引号将字符串赋给变量并反馈它，实际上与直接反馈变量并无差别。如果要查询包含空格的字符串，经常会用到双引号。 123456789$ x=*$ echo $xhello.sh menus.sh misc.sh phonebook tshift.sh$ echo &apos;$x&apos;$x$ echo &quot;$x&quot;* 这个例子可以看出无引号，单引号和双引号之间的区别。在最后一种情况中，双引号告诉 shell 在引号内照样进行变量名替换，所以 shell 把 $x 替换为 ＊，因为双引号中不做文件名替换，所以就把 ＊ 作为要显示的值传递给 echo。 对于第一种情况需要进一步说明，shell 在给变量赋值时不进行文件名替换（这从第三种情况中也能看出来），各步骤发生的精确次序如下： shell 扫描命令行，把 x 的值设为星号 ＊；shell 再次扫描命令行，碰到星号 ＊，把它替换成当前目录下的文件清单；shell 启动执行 echo 命令，把文件清单作为参数传递给 echo。 这个赋值的先后次序非常重要：shell 先作变量替换，然后作文件名替换，最后把这行处理为参数。 3. 反引号(`)命令替换是指 shell 能够将一个命令的标准输出插在一个命令行中任何位置。shell 中有两种方法作命令替换：把 shell 命令用反引号或者 $(...) 结构括起来，其中 $(...) 格式受到 POSIX 标准支持，也利于嵌套。 12345678$ echo The date and time is `date`The date and time is 2016年 12月 28日 星期三 16:15:44 CST$ echo The date and time is $(date)The date and time is 2016年 12月 28日 星期三 16:15:44 CST$ echo Your current working directory is $(pwd)Your current working directory is /home/howard/script 4. 反斜杠 backslash-escaped( \ )反斜杠一般用作转义字符，或称逃脱字符。Linux 如果 echo 要让转义字符发生作用，就要使用 -e 选项，且转义字符要使用双引号。 1echo -e &quot;\n&quot; 反斜杠的另一种作用，就是当反斜杠用于一行的最后一个字符时，shell 把行尾的反斜杠作为续行，这种结构在分几行输入长命令时经常使用。 原文地址]]></content>
