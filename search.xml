@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[Mac 使用技巧总结]]></title>
+      <url>%2F2017%2F02%2F21%2FMac-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93%2F</url>
+      <content type="text"><![CDATA[Mac 系统日常使用技巧归纳总结。 一、Mac 中 Finder 显示、关闭隐藏文件1.1 打开终端，输入：12345# 此命令显示隐藏文件 defaults write com.apple.finder AppleShowAllFiles -bool true# 此命令关闭显示隐藏文件defaults write com.apple.finder AppleShowAllFiles -bool false 1.2 命令运行之后需要重新加载 Finder快捷键 option + command + esc，选中 Finder，重新启动即可 二、在 Mac 中通过命令使用 Sublime 打开文件2.1 如果使用默认 shell在 Terminal 输入以下命令： 1sudo ln -s "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl 2.2 如果使用 zsh在文件 ~/.zshrc 最后添加 12345alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"alias nano="subl"export EDITOR="subl" 然后在 Terminal 中使用 subl 就可以打开 Sublime 了。 2.3 使用 open -a 指定 Sublime 打开指定的文件：1open -a Sublime\ Text .m2/settings.xml 可以使用 Tab 自定补全应用名称 未完待续…]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Linux 的 nohup 命令的用法]]></title>
       <url>%2F2017%2F01%2F18%2FLinux-%E7%9A%84-nohup-%E5%91%BD%E4%BB%A4%E7%9A%84%E7%94%A8%E6%B3%95%2F</url>
       <content type="text"><![CDATA[如果你正在运行一个进程，而且你觉得在退出帐户时该进程还不会结束，那么可以使用 nohup 命令。 命令简介1$ nohup Command [ Arg … ] [ &amp; ] 该命令可以在你退出帐户/关闭终端之后继续运行相应的进程。nohup 就是不挂起的意思（no hang up）。 nohup 运行由 Command 和相关的 Arg 参数指定的命令，忽略所有挂断（SIGHUP）信号。要运行后台中的 nohup 命令，添加 &amp; （ 表示 and 的符号）到命令的尾部。 如果使用 nohup 命令提交作业，那么在缺省情况下该作业的所有输出都被重定向到一个名为 nohup.out 的文件中，除非另外指定了输出文件。 使用举例1$ nohup java -jar adapter-minisite.jar /tomcat-1 /tomcat-2 &gt; logs.txt 2&gt;&amp;1 &amp; 在上面的例子中，运行命令 java -jar adapter-minisite.jar 输入参数 /tomcat-1 和 /tomcat-2，输出被重定向到 logs.txt 文件中。 退出任务如果运行的任务在当前 shell 终端，可以通过 jobs 命令查询相关信息，并且杀掉进程。 1234567891011121314151617# 查看当前 shell 终端的后台运行任务进程信息$ jobs[1]+ Running nohup java -jar adapter-minisite.jar /tomcat-1 /tomcat-2 &gt; logs.txt 2&gt;&amp;1 &amp;# 杀掉任务号$ kill %1# 或着找到 pid$ jobs -l[1]+ 11076 Running nohup java -jar adapter-minisite.jar /tomcat-1 /tomcat-2 &gt; logs.txt 2&gt;&amp;1 &amp;$ kill 11076# 或着$ fg %n # 置为前端运行Ctrl + c # 退出 如果非当前 shell 终端，可以通过 ps auxf | grep &#39;adapter-minisite&#39; 获取 pid 然后 kill pid。 参考文章]]></content>
