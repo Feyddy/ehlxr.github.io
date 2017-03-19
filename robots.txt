@@ -6,12 +6,12 @@ Allow: /categories/
 Allow: /tags/
 Allow: /about/
 
-Disallow: /vendors/
+Disallow: /lib/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://notes.ehlxr.top/baidusitemap.xml
-Sitemap: http://notes.ehlxr.top/sitemap.xml
+Sitemap: http://www.ehlxr.me/baidusitemap.xml
+Sitemap: http://www.ehlxr.me/sitemap.xml
