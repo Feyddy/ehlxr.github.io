@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Ehlxr&#39;s Blog</title>
+  <title>Ehlxr&#39;s Notes</title>
   <subtitle>世界那么大，在此安个家...</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://ehlxr.me/"/>
-  <updated>2017-03-08T01:33:35.000Z</updated>
-  <id>http://ehlxr.me/</id>
+  <link href="http://notes.ehlxr.top/"/>
+  <updated>2017-03-19T13:28:33.000Z</updated>
+  <id>http://notes.ehlxr.top/</id>
   
   <author>
     <name>小桥流水人家</name>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Mac 使用技巧总结</title>
-    <link href="http://ehlxr.me/2017/02/21/Mac-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/"/>
-    <id>http://ehlxr.me/2017/02/21/Mac-使用技巧总结/</id>
+    <link href="http://notes.ehlxr.top/2017/02/21/Mac-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/"/>
+    <id>http://notes.ehlxr.top/2017/02/21/Mac-使用技巧总结/</id>
     <published>2017-02-21T13:40:06.000Z</published>
-    <updated>2017-03-08T01:33:35.000Z</updated>
+    <updated>2017-03-19T13:28:33.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>Mac 系统日常使用技巧归纳总结。</p>
@@ -64,17 +64,17 @@
     
     </summary>
     
-      <category term="开发工具" scheme="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="开发工具" scheme="http://notes.ehlxr.top/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Mac" scheme="http://ehlxr.me/tags/Mac/"/>
+      <category term="Mac" scheme="http://notes.ehlxr.top/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>Linux 的 nohup 命令的用法</title>
-    <link href="http://ehlxr.me/2017/01/18/Linux-%E7%9A%84-nohup-%E5%91%BD%E4%BB%A4%E7%9A%84%E7%94%A8%E6%B3%95/"/>
-    <id>http://ehlxr.me/2017/01/18/Linux-的-nohup-命令的用法/</id>
+    <link href="http://notes.ehlxr.top/2017/01/18/Linux-%E7%9A%84-nohup-%E5%91%BD%E4%BB%A4%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+    <id>http://notes.ehlxr.top/2017/01/18/Linux-的-nohup-命令的用法/</id>
     <published>2017-01-18T08:13:21.000Z</published>
     <updated>2017-01-18T08:29:30.000Z</updated>
     
@@ -107,19 +107,19 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
-      <category term="nohup" scheme="http://ehlxr.me/tags/nohup/"/>
+      <category term="nohup" scheme="http://notes.ehlxr.top/tags/nohup/"/>
     
   </entry>
   
   <entry>
     <title>Linux 中 fg、bg、jobs、&amp; 指令</title>
-    <link href="http://ehlxr.me/2017/01/18/Linux-%E4%B8%AD-fg%E3%80%81bg%E3%80%81jobs%E3%80%81-%E6%8C%87%E4%BB%A4/"/>
-    <id>http://ehlxr.me/2017/01/18/Linux-中-fg、bg、jobs、-指令/</id>
+    <link href="http://notes.ehlxr.top/2017/01/18/Linux-%E4%B8%AD-fg%E3%80%81bg%E3%80%81jobs%E3%80%81-%E6%8C%87%E4%BB%A4/"/>
+    <id>http://notes.ehlxr.top/2017/01/18/Linux-中-fg、bg、jobs、-指令/</id>
     <published>2017-01-18T07:30:16.000Z</published>
     <updated>2017-01-18T08:30:16.000Z</updated>
     
@@ -186,17 +186,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>[转]CentOS 升级 kernel</title>
-    <link href="http://ehlxr.me/2017/01/10/%E8%BD%AC-CentOS-%E5%8D%87%E7%BA%A7-kernel/"/>
-    <id>http://ehlxr.me/2017/01/10/转-CentOS-升级-kernel/</id>
+    <link href="http://notes.ehlxr.top/2017/01/10/%E8%BD%AC-CentOS-%E5%8D%87%E7%BA%A7-kernel/"/>
+    <id>http://notes.ehlxr.top/2017/01/10/转-CentOS-升级-kernel/</id>
     <published>2017-01-10T03:01:09.000Z</published>
     <updated>2017-01-10T03:22:16.000Z</updated>
     
@@ -232,21 +232,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
+      <category term="CentOS" scheme="http://notes.ehlxr.top/tags/CentOS/"/>
     
-      <category term="kernel" scheme="http://ehlxr.me/tags/kernel/"/>
+      <category term="kernel" scheme="http://notes.ehlxr.top/tags/kernel/"/>
     
   </entry>
   
   <entry>
     <title>Docker 利用数据卷容器来备份、恢复、迁移数据</title>
-    <link href="http://ehlxr.me/2017/01/09/Docker-%E5%88%A9%E7%94%A8%E6%95%B0%E6%8D%AE%E5%8D%B7%E5%AE%B9%E5%99%A8%E6%9D%A5%E5%A4%87%E4%BB%BD%E3%80%81%E6%81%A2%E5%A4%8D%E3%80%81%E8%BF%81%E7%A7%BB%E6%95%B0%E6%8D%AE/"/>
-    <id>http://ehlxr.me/2017/01/09/Docker-利用数据卷容器来备份、恢复、迁移数据/</id>
+    <link href="http://notes.ehlxr.top/2017/01/09/Docker-%E5%88%A9%E7%94%A8%E6%95%B0%E6%8D%AE%E5%8D%B7%E5%AE%B9%E5%99%A8%E6%9D%A5%E5%A4%87%E4%BB%BD%E3%80%81%E6%81%A2%E5%A4%8D%E3%80%81%E8%BF%81%E7%A7%BB%E6%95%B0%E6%8D%AE/"/>
+    <id>http://notes.ehlxr.top/2017/01/09/Docker-利用数据卷容器来备份、恢复、迁移数据/</id>
     <published>2017-01-09T08:54:24.000Z</published>
     <updated>2017-01-10T01:32:59.000Z</updated>
     
@@ -280,17 +280,17 @@
     
     </summary>
     
-      <category term="Docker" scheme="http://ehlxr.me/categories/Docker/"/>
+      <category term="Docker" scheme="http://notes.ehlxr.top/categories/Docker/"/>
     
     
-      <category term="Docker" scheme="http://ehlxr.me/tags/Docker/"/>
+      <category term="Docker" scheme="http://notes.ehlxr.top/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 7 安装Python3、pip3</title>
-    <link href="http://ehlxr.me/2017/01/07/CentOS-7-%E5%AE%89%E8%A3%85-Python3%E3%80%81pip3/"/>
-    <id>http://ehlxr.me/2017/01/07/CentOS-7-安装-Python3、pip3/</id>
+    <link href="http://notes.ehlxr.top/2017/01/07/CentOS-7-%E5%AE%89%E8%A3%85-Python3%E3%80%81pip3/"/>
+    <id>http://notes.ehlxr.top/2017/01/07/CentOS-7-安装-Python3、pip3/</id>
     <published>2017-01-07T11:23:22.000Z</published>
     <updated>2017-01-07T11:40:26.000Z</updated>
     
@@ -323,21 +323,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
+      <category term="CentOS" scheme="http://notes.ehlxr.top/tags/CentOS/"/>
     
-      <category term="Python" scheme="http://ehlxr.me/tags/Python/"/>
+      <category term="Python" scheme="http://notes.ehlxr.top/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Good bye 2016...</title>
-    <link href="http://ehlxr.me/2016/12/31/Good-bye-2016/"/>
-    <id>http://ehlxr.me/2016/12/31/Good-bye-2016/</id>
+    <link href="http://notes.ehlxr.top/2016/12/31/Good-bye-2016/"/>
+    <id>http://notes.ehlxr.top/2016/12/31/Good-bye-2016/</id>
     <published>2016-12-31T04:51:14.000Z</published>
     <updated>2016-12-31T06:16:20.000Z</updated>
     
@@ -357,19 +357,19 @@
     
     </summary>
     
-      <category term="杂谈" scheme="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://notes.ehlxr.top/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="杂谈" scheme="http://ehlxr.me/tags/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://notes.ehlxr.top/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
   <entry>
-    <title>[转]shell 中单引号、双引号、反引号、反斜杠区别</title>
-    <link href="http://ehlxr.me/2016/12/30/%E8%BD%AC-shell-%E4%B8%AD%E5%8D%95%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8C%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8D%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8D%E6%96%9C%E6%9D%A0%E5%8C%BA%E5%88%AB/"/>
-    <id>http://ehlxr.me/2016/12/30/转-shell-中单引号、双引号、反引号、反斜杠区别/</id>
+    <title>[转]Linux shell 中单引号、双引号、反引号、反斜杠的区别</title>
+    <link href="http://notes.ehlxr.top/2016/12/30/%E8%BD%AC-Linux-shell-%E4%B8%AD%E5%8D%95%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8C%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8D%E5%BC%95%E5%8F%B7%E3%80%81%E5%8F%8D%E6%96%9C%E6%9D%A0%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://notes.ehlxr.top/2016/12/30/转-Linux-shell-中单引号、双引号、反引号、反斜杠的区别/</id>
     <published>2016-12-30T07:36:51.000Z</published>
-    <updated>2017-02-17T12:54:43.000Z</updated>
+    <updated>2017-03-19T13:29:18.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p><code>shell</code> 可以识别 <code>4</code> 种不同类型的引字符号：单引号字符 <code>&#39;</code>，双引号字符 <code>&quot;</code>，反斜杠字符 <code>\</code>，反引号字符 <code>`</code> ，学习 <code>shell</code> 编程的朋友可以看下。</p>
@@ -404,19 +404,19 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
-      <category term="shell" scheme="http://ehlxr.me/tags/shell/"/>
+      <category term="shell" scheme="http://notes.ehlxr.top/tags/shell/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 安装 Nginx</title>
-    <link href="http://ehlxr.me/2016/12/23/CentOS-%E5%AE%89%E8%A3%85-Nginx/"/>
-    <id>http://ehlxr.me/2016/12/23/CentOS-安装-Nginx/</id>
+    <link href="http://notes.ehlxr.top/2016/12/23/CentOS-%E5%AE%89%E8%A3%85-Nginx/"/>
+    <id>http://notes.ehlxr.top/2016/12/23/CentOS-安装-Nginx/</id>
     <published>2016-12-23T03:20:44.000Z</published>
     <updated>2016-12-23T03:31:31.000Z</updated>
     
@@ -451,21 +451,21 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
+      <category term="CentOS" scheme="http://notes.ehlxr.top/tags/CentOS/"/>
     
-      <category term="Nginx" scheme="http://ehlxr.me/tags/Nginx/"/>
+      <category term="Nginx" scheme="http://notes.ehlxr.top/tags/Nginx/"/>
     
   </entry>
   
   <entry>
     <title>CentOS 安装 rar、zip 解压缩</title>
-    <link href="http://ehlxr.me/2016/12/22/CentOS-%E5%AE%89%E8%A3%85-rar%E3%80%81zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
-    <id>http://ehlxr.me/2016/12/22/CentOS-安装-rar、zip-解压缩/</id>
+    <link href="http://notes.ehlxr.top/2016/12/22/CentOS-%E5%AE%89%E8%A3%85-rar%E3%80%81zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9/"/>
+    <id>http://notes.ehlxr.top/2016/12/22/CentOS-安装-rar、zip-解压缩/</id>
     <published>2016-12-22T07:39:45.000Z</published>
     <updated>2016-12-26T06:31:45.000Z</updated>
     
@@ -499,23 +499,23 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
-      <category term="CentOS" scheme="http://ehlxr.me/tags/CentOS/"/>
+      <category term="CentOS" scheme="http://notes.ehlxr.top/tags/CentOS/"/>
     
-      <category term="rar" scheme="http://ehlxr.me/tags/rar/"/>
+      <category term="rar" scheme="http://notes.ehlxr.top/tags/rar/"/>
     
-      <category term="zip" scheme="http://ehlxr.me/tags/zip/"/>
+      <category term="zip" scheme="http://notes.ehlxr.top/tags/zip/"/>
     
   </entry>
   
   <entry>
     <title>Vim Tab 设置为 4 个空格</title>
-    <link href="http://ehlxr.me/2016/12/02/Vim-Tab-%E8%AE%BE%E7%BD%AE%E4%B8%BA-4-%E4%B8%AA%E7%A9%BA%E6%A0%BC/"/>
-    <id>http://ehlxr.me/2016/12/02/Vim-Tab-设置为-4-个空格/</id>
+    <link href="http://notes.ehlxr.top/2016/12/02/Vim-Tab-%E8%AE%BE%E7%BD%AE%E4%B8%BA-4-%E4%B8%AA%E7%A9%BA%E6%A0%BC/"/>
+    <id>http://notes.ehlxr.top/2016/12/02/Vim-Tab-设置为-4-个空格/</id>
     <published>2016-12-02T12:46:05.000Z</published>
     <updated>2016-12-02T12:59:12.000Z</updated>
     
@@ -540,17 +540,17 @@
     
     </summary>
     
-      <category term="开发工具" scheme="http://ehlxr.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+      <category term="开发工具" scheme="http://notes.ehlxr.top/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Vim" scheme="http://ehlxr.me/tags/Vim/"/>
+      <category term="Vim" scheme="http://notes.ehlxr.top/tags/Vim/"/>
     
   </entry>
   
   <entry>
     <title>忙忙碌碌的十一月份</title>
-    <link href="http://ehlxr.me/2016/11/30/%E5%BF%99%E5%BF%99%E7%A2%8C%E7%A2%8C%E7%9A%84%E5%8D%81%E4%B8%80%E6%9C%88%E4%BB%BD/"/>
-    <id>http://ehlxr.me/2016/11/30/忙忙碌碌的十一月份/</id>
+    <link href="http://notes.ehlxr.top/2016/11/30/%E5%BF%99%E5%BF%99%E7%A2%8C%E7%A2%8C%E7%9A%84%E5%8D%81%E4%B8%80%E6%9C%88%E4%BB%BD/"/>
+    <id>http://notes.ehlxr.top/2016/11/30/忙忙碌碌的十一月份/</id>
     <published>2016-11-30T12:04:13.000Z</published>
     <updated>2016-11-30T13:08:26.000Z</updated>
     
@@ -569,17 +569,17 @@
     
     </summary>
     
-      <category term="杂谈" scheme="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://notes.ehlxr.top/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="杂谈" scheme="http://ehlxr.me/tags/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://notes.ehlxr.top/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
   <entry>
     <title>[转]Linux 查看系统内核版本和发行版本</title>
-    <link href="http://ehlxr.me/2016/11/18/%E8%BD%AC-Linux-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC%E5%92%8C%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/"/>
-    <id>http://ehlxr.me/2016/11/18/转-Linux-查看系统内核版本和发行版本/</id>
+    <link href="http://notes.ehlxr.top/2016/11/18/%E8%BD%AC-Linux-%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E7%89%88%E6%9C%AC%E5%92%8C%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/"/>
+    <id>http://notes.ehlxr.top/2016/11/18/转-Linux-查看系统内核版本和发行版本/</id>
     <published>2016-11-18T06:56:43.000Z</published>
     <updated>2016-11-18T07:19:08.000Z</updated>
     
@@ -607,19 +607,19 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://ehlxr.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://ehlxr.me/tags/Linux/"/>
+      <category term="Linux" scheme="http://notes.ehlxr.top/tags/Linux/"/>
     
-      <category term="Linux版本" scheme="http://ehlxr.me/tags/Linux%E7%89%88%E6%9C%AC/"/>
+      <category term="Linux版本" scheme="http://notes.ehlxr.top/tags/Linux%E7%89%88%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>Test daocloud CI</title>
-    <link href="http://ehlxr.me/2016/11/18/Test-daocloud-CI/"/>
-    <id>http://ehlxr.me/2016/11/18/Test-daocloud-CI/</id>
+    <link href="http://notes.ehlxr.top/2016/11/18/Test-daocloud-CI/"/>
+    <id>http://notes.ehlxr.top/2016/11/18/Test-daocloud-CI/</id>
     <published>2016-11-18T01:44:35.000Z</published>
     <updated>2017-02-15T09:37:04.000Z</updated>
     
@@ -633,17 +633,17 @@
     
     </summary>
     
-      <category term="持续构建" scheme="http://ehlxr.me/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+      <category term="持续构建" scheme="http://notes.ehlxr.top/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
     
     
-      <category term="持续构建" scheme="http://ehlxr.me/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+      <category term="持续构建" scheme="http://notes.ehlxr.top/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
     
   </entry>
   
   <entry>
     <title>[转]Git 版本回滚</title>
-    <link href="http://ehlxr.me/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/"/>
-    <id>http://ehlxr.me/2016/11/07/转-Git-版本回滚/</id>
+    <link href="http://notes.ehlxr.top/2016/11/07/%E8%BD%AC-Git-%E7%89%88%E6%9C%AC%E5%9B%9E%E6%BB%9A/"/>
+    <id>http://notes.ehlxr.top/2016/11/07/转-Git-版本回滚/</id>
     <published>2016-11-07T08:53:38.000Z</published>
     <updated>2016-12-14T09:50:43.000Z</updated>
     
@@ -698,17 +698,17 @@
     
     </summary>
     
-      <category term="Git" scheme="http://ehlxr.me/categories/Git/"/>
+      <category term="Git" scheme="http://notes.ehlxr.top/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://ehlxr.me/tags/Git/"/>
+      <category term="Git" scheme="http://notes.ehlxr.top/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>Docker 学习笔记</title>
-    <link href="http://ehlxr.me/2016/11/03/Docker-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://ehlxr.me/2016/11/03/Docker-学习笔记/</id>
+    <link href="http://notes.ehlxr.top/2016/11/03/Docker-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://notes.ehlxr.top/2016/11/03/Docker-学习笔记/</id>
     <published>2016-11-03T07:46:19.000Z</published>
     <updated>2017-01-10T03:15:18.000Z</updated>
     
@@ -716,7 +716,7 @@
 <h1 id="一、CentOS-系统安装"><a href="#一、CentOS-系统安装" class="headerlink" title="一、CentOS 系统安装"></a>一、CentOS 系统安装</h1><p>参考《Docker — 从入门到实践》 之 <a href="https://github.com/yeasy/docker_practice/blob/master/install/centos.md" target="_blank" rel="external">“CentOS 操作系统安装 Docker”</a></p>
 <h2 id="1-1-系统要求"><a href="#1-1-系统要求" class="headerlink" title="1.1 系统要求"></a>1.1 系统要求</h2><p>Docker 最低支持 CentOS 7。</p>
 <p>Docker 需要安装在 64 位的平台，并且内核版本不低于 3.10。 CentOS 7 满足最低内核的要求，但由于内核版本比较低，部分功能（如 <code>overlay2</code> 存储层驱动）无法使用，并且部分功能可能不太稳定。</p>
-<p>参考升级<a href="http://ehlxr.me/2017/01/10/%E8%BD%AC-CentOS-%E5%8D%87%E7%BA%A7-kernel/">CentOS 升级 kernel</a></p>
+<p>参考升级<a href="http://ehlxr.me/2017/01/10/%E8%BD%AC-CentOS-%E5%8D%87%E7%BA%A7-kernel/" target="_blank" rel="external">CentOS 升级 kernel</a></p>
 <h2 id="1-2-使用脚本自动安装"><a href="#1-2-使用脚本自动安装" class="headerlink" title="1.2 使用脚本自动安装"></a>1.2 使用脚本自动安装</h2><p>Docker 官方为了简化安装流程，提供了一套安装脚本，CentOS 系统上可以使用这套脚本安装：<br><a id="more"></a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl <span class="_">-s</span>SL https://get.docker.com/ | sh</div></pre></td></tr></table></figure></p>
 <p>执行这个命令后，脚本就会自动的将一切准备工作做好，并且把 Docker 安装在系统中。</p>
 <p>不过，由于伟大的墙的原因，在国内使用这个脚本可能会出现某些下载出现错误的情况。国内的一些云服务商提供了这个脚本的修改版本，使其使用国内的 Docker 软件源镜像安装，这样就避免了墙的干扰。</p>
@@ -878,24 +878,21 @@
     
     </summary>
     
-      <category term="Docker" scheme="http://ehlxr.me/categories/Docker/"/>
+      <category term="Docker" scheme="http://notes.ehlxr.top/categories/Docker/"/>
     
     
-      <category term="Docker" scheme="http://ehlxr.me/tags/Docker/"/>
+      <category term="Docker" scheme="http://notes.ehlxr.top/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>测试使用 daocloud 持续构建 Hexo</title>
-    <link href="http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/"/>
-    <id>http://ehlxr.me/2016/11/02/测试使用-daocloud-持续构建-Hexo/</id>
+    <link href="http://notes.ehlxr.top/2016/11/02/%E6%B5%8B%E8%AF%95%E4%BD%BF%E7%94%A8-daocloud-%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA-Hexo/"/>
+    <id>http://notes.ehlxr.top/2016/11/02/测试使用-daocloud-持续构建-Hexo/</id>
     <published>2016-11-02T11:03:06.000Z</published>
-    <updated>2017-02-17T12:54:43.000Z</updated>
+    <updated>2017-03-19T13:29:18.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="测试使用-daocloud-持续构建-Hexo"><a href="#测试使用-daocloud-持续构建-Hexo" class="headerlink" title="测试使用 daocloud 持续构建 Hexo"></a>测试使用 daocloud 持续构建 Hexo</h1><div class="note danger"><p>Coding Hexo DaoCloud </p>
-</div>
-<div class="note primary"><p>看到这边博文，表示持续构建成功！！！ </p>
-</div>
+    <content type="html"><![CDATA[<h1 id="测试使用-daocloud-持续构建-Hexo"><a href="#测试使用-daocloud-持续构建-Hexo" class="headerlink" title="测试使用 daocloud 持续构建 Hexo"></a>测试使用 daocloud 持续构建 Hexo</h1><p>Coding Hexo DaoCloud<br>看到这边博文，表示持续构建成功！！！</p>
 ]]></content>
     
     <summary type="html">
@@ -904,19 +901,19 @@
     
     </summary>
     
-      <category term="持续构建" scheme="http://ehlxr.me/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+      <category term="持续构建" scheme="http://notes.ehlxr.top/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
     
     
-      <category term="持续构建" scheme="http://ehlxr.me/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+      <category term="持续构建" scheme="http://notes.ehlxr.top/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
     
-      <category term="Daocloud" scheme="http://ehlxr.me/tags/Daocloud/"/>
+      <category term="Daocloud" scheme="http://notes.ehlxr.top/tags/Daocloud/"/>
     
   </entry>
   
   <entry>
     <title>测试 Travis CI 结合 Hexo 使用</title>
-    <link href="http://ehlxr.me/2016/11/02/%E6%B5%8B%E8%AF%95-Travis-CI-%E7%BB%93%E5%90%88-Hexo-%E4%BD%BF%E7%94%A8/"/>
-    <id>http://ehlxr.me/2016/11/02/测试-Travis-CI-结合-Hexo-使用/</id>
+    <link href="http://notes.ehlxr.top/2016/11/02/%E6%B5%8B%E8%AF%95-Travis-CI-%E7%BB%93%E5%90%88-Hexo-%E4%BD%BF%E7%94%A8/"/>
+    <id>http://notes.ehlxr.top/2016/11/02/测试-Travis-CI-结合-Hexo-使用/</id>
     <published>2016-11-02T09:32:35.000Z</published>
     <updated>2016-11-03T12:35:22.000Z</updated>
     
@@ -928,21 +925,21 @@
     
     </summary>
     
-      <category term="持续构建" scheme="http://ehlxr.me/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+      <category term="持续构建" scheme="http://notes.ehlxr.top/categories/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
     
     
-      <category term="持续构建" scheme="http://ehlxr.me/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
+      <category term="持续构建" scheme="http://notes.ehlxr.top/tags/%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA/"/>
     
-      <category term="Travis CI" scheme="http://ehlxr.me/tags/Travis-CI/"/>
+      <category term="Travis CI" scheme="http://notes.ehlxr.top/tags/Travis-CI/"/>
     
   </entry>
   
   <entry>
     <title>热爱微小的改变</title>
-    <link href="http://ehlxr.me/2016/10/31/%E7%83%AD%E7%88%B1%E5%BE%AE%E5%B0%8F%E7%9A%84%E6%94%B9%E5%8F%98/"/>
-    <id>http://ehlxr.me/2016/10/31/热爱微小的改变/</id>
+    <link href="http://notes.ehlxr.top/2016/10/31/%E7%83%AD%E7%88%B1%E5%BE%AE%E5%B0%8F%E7%9A%84%E6%94%B9%E5%8F%98/"/>
+    <id>http://notes.ehlxr.top/2016/10/31/热爱微小的改变/</id>
     <published>2016-10-31T09:05:37.000Z</published>
-    <updated>2017-02-17T12:54:43.000Z</updated>
+    <updated>2017-03-19T13:29:18.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://oapjp6spr.bkt.clouddn.com/20161031001.jpg" alt=""><br>当你有着强烈的情绪时，可能是因为你要明哲保身。你不愿冒险因为你害怕被拒绝、害怕失败、害怕自己hold不住。真的，试想下如果你彻底的失败了，甚至在完全陌生的人面前流泪你会怎么做？也许你不相信你会采取合理的风险。也许你曾经打破常规去挑战自我的极限，但是结果却并不令你满意。但卖掉你所有的财产，搬去墨西哥并非我今天所谈论的改变类型。</p>
 <a id="more"></a>
@@ -961,19 +958,19 @@
     
     </summary>
     
-      <category term="杂谈" scheme="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://notes.ehlxr.top/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="杂谈" scheme="http://ehlxr.me/tags/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://notes.ehlxr.top/tags/%E6%9D%82%E8%B0%88/"/>
     
   </entry>
   
   <entry>
     <title>看懂的人都还在加班中...</title>
-    <link href="http://ehlxr.me/2016/10/27/%E7%9C%8B%E6%87%82%E7%9A%84%E4%BA%BA%E9%83%BD%E8%BF%98%E5%9C%A8%E5%8A%A0%E7%8F%AD%E4%B8%AD/"/>
-    <id>http://ehlxr.me/2016/10/27/看懂的人都还在加班中/</id>
+    <link href="http://notes.ehlxr.top/2016/10/27/%E7%9C%8B%E6%87%82%E7%9A%84%E4%BA%BA%E9%83%BD%E8%BF%98%E5%9C%A8%E5%8A%A0%E7%8F%AD%E4%B8%AD/"/>
+    <id>http://notes.ehlxr.top/2016/10/27/看懂的人都还在加班中/</id>
     <published>2016-10-27T07:06:38.000Z</published>
-    <updated>2017-02-17T12:54:43.000Z</updated>
+    <updated>2017-03-19T13:29:18.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>以下是关于程序员的一些笑话，据说看懂的人都还在加班中。</p>
@@ -1030,10 +1027,10 @@
     
     </summary>
     
-      <category term="杂谈" scheme="http://ehlxr.me/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://notes.ehlxr.top/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="程序员幽默" scheme="http://ehlxr.me/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B9%BD%E9%BB%98/"/>
+      <category term="程序员幽默" scheme="http://notes.ehlxr.top/tags/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%B9%BD%E9%BB%98/"/>
     
   </entry>
   
